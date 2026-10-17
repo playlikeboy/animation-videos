@@ -731,15 +731,14 @@
   },
   "checks": {
     "latest": {
-      "revision": "931f6e94-171a-4034-ac6d-e0b232c6ca1f",
-      "id": "f21b1c12-14a9-40e6-a58e-a55deacb76a8"
+      "revision": null,
+      "id": "31c133f7-c739-43c5-adb4-05f4b1157b07"
     },
     "revisions": {
       "571eed41-d47a-4cd7-83f4-e2ae25aa4563": [
         {
           "id": "6c8f25d7-099b-4c61-b3cc-c3c8bf2bfb8a",
           "scope": "project",
-          "report": "/Users/shaswatraj/Desktop/youtube/animations/the-five-minute-rule/.hyperframes/artifacts/checks/6c8f25d7-099b-4c61-b3cc-c3c8bf2bfb8a.json",
           "metadata": {
             "ok": false,
             "browserSkipped": true,
@@ -761,14 +760,15 @@
           "revision": "571eed41-d47a-4cd7-83f4-e2ae25aa4563",
           "inputFingerprint": "3fbb17d7aab03f0439d5110ffafa67ca6e33b57197acb3bdf371c794e484cb6a",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "ad4f33aa-d2f7-49a8-b78e-bec37be01fbf"
         }
       ],
       "a56132ea-6fb3-4a05-bf54-aac60e7defc6": [
         {
           "id": "f81f5609-dbdc-47c4-a784-0ad513f6f9e0",
           "scope": "project",
-          "report": "/Users/shaswatraj/Desktop/youtube/animations/the-five-minute-rule/.hyperframes/artifacts/checks/f81f5609-dbdc-47c4-a784-0ad513f6f9e0.json",
           "metadata": {
             "ok": false,
             "browserSkipped": true,
@@ -790,14 +790,15 @@
           "revision": "a56132ea-6fb3-4a05-bf54-aac60e7defc6",
           "inputFingerprint": "76faeb8d6f08029d36519c43b20627d51525e9fe1c199bbc2dfd064315753e1b",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "ad4f33aa-d2f7-49a8-b78e-bec37be01fbf"
         }
       ],
       "9cf1eb0f-6a8a-4d66-a4c3-8113e061ac5e": [
         {
           "id": "267a9fee-fc0b-42db-88d6-dc03f12282ce",
           "scope": "project",
-          "report": "/Users/shaswatraj/Desktop/youtube/animations/the-five-minute-rule/.hyperframes/artifacts/checks/267a9fee-fc0b-42db-88d6-dc03f12282ce.json",
           "metadata": {
             "ok": false,
             "browserSkipped": false,
@@ -819,14 +820,15 @@
           "revision": "9cf1eb0f-6a8a-4d66-a4c3-8113e061ac5e",
           "inputFingerprint": "d5333c76fef9f25847a2d4ec67a29d312c547207506cc3bb41f09ac6ee674941",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "ad4f33aa-d2f7-49a8-b78e-bec37be01fbf"
         }
       ],
       "77027adb-6269-46e8-96f2-9e5693036e1e": [
         {
           "id": "8f1d24b1-2d62-4952-bda5-fbbcf396b19d",
           "scope": "project",
-          "report": "/Users/shaswatraj/Desktop/youtube/animations/the-five-minute-rule/.hyperframes/artifacts/checks/8f1d24b1-2d62-4952-bda5-fbbcf396b19d.json",
           "metadata": {
             "ok": false,
             "browserSkipped": true,
@@ -848,14 +850,15 @@
           "revision": "77027adb-6269-46e8-96f2-9e5693036e1e",
           "inputFingerprint": "c84d94c2d6296d988f1fdfe62e1380ca7cec039ede9bb1b410db052bf7665e02",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "ad4f33aa-d2f7-49a8-b78e-bec37be01fbf"
         }
       ],
       "48154e5b-5cc9-4552-b341-cb477c035d8b": [
         {
           "id": "68530891-afd7-4491-a7fa-b49027373494",
           "scope": "project",
-          "report": "/Users/shaswatraj/Desktop/youtube/animations/the-five-minute-rule/.hyperframes/artifacts/checks/68530891-afd7-4491-a7fa-b49027373494.json",
           "metadata": {
             "ok": false,
             "browserSkipped": false,
@@ -877,14 +880,15 @@
           "revision": "48154e5b-5cc9-4552-b341-cb477c035d8b",
           "inputFingerprint": "17ea80eff399534e72da3fafd1e66069aea5a4032f3f5814b66bd60072745086",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "ad4f33aa-d2f7-49a8-b78e-bec37be01fbf"
         }
       ],
       "2ffae408-9367-4d88-8418-e1faaff8ec9a": [
         {
           "id": "dfed530c-b88c-4e99-847f-351824932b05",
           "scope": "project",
-          "report": "/Users/shaswatraj/Desktop/youtube/animations/the-five-minute-rule/.hyperframes/artifacts/checks/dfed530c-b88c-4e99-847f-351824932b05.json",
           "metadata": {
             "ok": false,
             "browserSkipped": false,
@@ -906,14 +910,15 @@
           "revision": "2ffae408-9367-4d88-8418-e1faaff8ec9a",
           "inputFingerprint": "a8077b1d00a9aa8e1346b82dbd91d80f773e8ec433a8b770c0d680dac10cd90a",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "ad4f33aa-d2f7-49a8-b78e-bec37be01fbf"
         }
       ],
       "d30d6611-ebf3-476b-88a9-f0c601d4a6c5": [
         {
           "id": "ded062d7-93fb-4273-833e-f6384dbae117",
           "scope": "project",
-          "report": "/Users/shaswatraj/Desktop/youtube/animations/the-five-minute-rule/.hyperframes/artifacts/checks/ded062d7-93fb-4273-833e-f6384dbae117.json",
           "metadata": {
             "ok": false,
             "browserSkipped": false,
@@ -935,12 +940,13 @@
           "revision": "d30d6611-ebf3-476b-88a9-f0c601d4a6c5",
           "inputFingerprint": "3a09c55139b79c89a60b84243af8c794d22ffec71ae9aa17d4c9422572c7bb04",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "ad4f33aa-d2f7-49a8-b78e-bec37be01fbf"
         },
         {
           "id": "aa9bb697-512a-423d-bde5-eae5b68f5487",
           "scope": "project",
-          "report": "/Users/shaswatraj/Desktop/youtube/animations/the-five-minute-rule/.hyperframes/artifacts/checks/aa9bb697-512a-423d-bde5-eae5b68f5487.json",
           "metadata": {
             "ok": false,
             "browserSkipped": false,
@@ -962,14 +968,15 @@
           "revision": "d30d6611-ebf3-476b-88a9-f0c601d4a6c5",
           "inputFingerprint": "3a09c55139b79c89a60b84243af8c794d22ffec71ae9aa17d4c9422572c7bb04",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "ad4f33aa-d2f7-49a8-b78e-bec37be01fbf"
         }
       ],
       "e6d2dee7-7857-4956-b156-c37f056466ee": [
         {
           "id": "ea044147-740a-4a1a-8c17-17f86f41ad93",
           "scope": "project",
-          "report": "/Users/shaswatraj/Desktop/youtube/animations/the-five-minute-rule/.hyperframes/artifacts/checks/ea044147-740a-4a1a-8c17-17f86f41ad93.json",
           "metadata": {
             "ok": true,
             "browserSkipped": false,
@@ -991,14 +998,15 @@
           "revision": "e6d2dee7-7857-4956-b156-c37f056466ee",
           "inputFingerprint": "e89d2e77bcef8cf848c525a0293722a8e41316ac977a1068b999e36c25a0522a",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "ad4f33aa-d2f7-49a8-b78e-bec37be01fbf"
         }
       ],
       "931f6e94-171a-4034-ac6d-e0b232c6ca1f": [
         {
           "id": "f21b1c12-14a9-40e6-a58e-a55deacb76a8",
           "scope": "project",
-          "report": "/Users/shaswatraj/Desktop/youtube/animations/the-five-minute-rule/.hyperframes/artifacts/checks/f21b1c12-14a9-40e6-a58e-a55deacb76a8.json",
           "metadata": {
             "ok": true,
             "browserSkipped": false,
@@ -1020,7 +1028,9 @@
           "revision": "931f6e94-171a-4034-ac6d-e0b232c6ca1f",
           "inputFingerprint": "d1cf4b8049877bd14fda66038aa8215217153c30cc9362afb049184df0e49a1e",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "ad4f33aa-d2f7-49a8-b78e-bec37be01fbf"
         }
       ]
     },
@@ -1182,5 +1192,18 @@
         "attribution": "inputs-changed"
       }
     ]
-  }
+  },
+  "renders": {
+    "latest": {
+      "id": "ad4f33aa-d2f7-49a8-b78e-bec37be01fbf",
+      "completedAt": 1792252322790,
+      "output": "/Users/shaswatraj/Desktop/youtube/animations/the-five-minute-rule/renders/the-five-minute-rule_2026-10-17_21-12-04.mp4",
+      "status": "completed",
+      "revision": "5538e985-ecb7-4749-a8a5-265f4cc96496"
+    },
+    "retainedRevisions": [
+      "5538e985-ecb7-4749-a8a5-265f4cc96496"
+    ]
+  },
+  "pendingArtifactCleanup": []
 }

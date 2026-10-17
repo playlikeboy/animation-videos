@@ -2,6 +2,7 @@
   "name": "imgbb-mcp",
   "version": "1.0.0",
   "description": "Production-ready Model Context Protocol (MCP) server for ImgBB running on Cloudflare Workers",
+  "type": "module",
   "main": "src/index.ts",
   "scripts": {
     "dev": "wrangler dev",

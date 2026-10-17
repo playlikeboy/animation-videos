@@ -1,0 +1,22 @@
+# Dependencies
+node_modules/
+renderers/node_modules/
+remotion/node_modules/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+
+# Cache & Temp
+.cache/
+.hyperframes/
+assets/renders_cache/
+.thumbnails/
+.waveform-cache/
+
+# System
+.DS_Store
+Thumbs.db

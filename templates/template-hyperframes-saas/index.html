@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1920, height=1080">
+  <title>HyperFrames SaaS Product Explainer</title>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+    html, body { width: 1920px; height: 1080px; overflow: hidden; background: #0a0e17; color: #fff; }
+    #stage { position: relative; width: 1920px; height: 1080px; overflow: hidden; }
+
+    /* Scene Container */
+    .scene { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; opacity: 0; }
+
+    /* Scene 1: Glassmorphic SaaS Window */
+    .window {
+      width: 1200px; height: 720px;
+      background: rgba(22, 27, 44, 0.85);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 20px;
+      box-shadow: 0 40px 100px rgba(0, 0, 0, 0.7), 0 0 80px rgba(59, 130, 246, 0.2);
+      backdrop-filter: blur(24px);
+      padding: 40px;
+      display: flex; flex-direction: column; gap: 24px;
+    }
+    .window-header { display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid rgba(255,255,255,0.08); padding-bottom: 20px; }
+    .window-dots { display: flex; gap: 10px; }
+    .dot { width: 14px; height: 14px; border-radius: 50%; }
+    .dot-red { background: #ef4444; }
+    .dot-yellow { background: #f59e0b; }
+    .dot-green { background: #10b981; }
+
+    .hero-title { font-size: 64px; font-weight: 800; letter-spacing: -2px; line-height: 1.1; background: linear-gradient(135deg, #ffffff 30%, #60a5fa); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .badge { display: inline-flex; align-items: center; padding: 8px 16px; border-radius: 9999px; background: rgba(59, 130, 246, 0.15); border: 1px solid rgba(59, 130, 246, 0.4); color: #60a5fa; font-size: 16px; font-weight: 600; width: fit-content; }
+
+    /* Metric Cards Grid */
+    .metric-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 20px; }
+    .card { background: rgba(30, 41, 59, 0.5); border: 1px solid rgba(255,255,255,0.06); border-radius: 14px; padding: 24px; }
+    .card-label { font-size: 14px; color: #94a3b8; font-weight: 500; text-transform: uppercase; letter-spacing: 1px; }
+    .card-value { font-size: 44px; font-weight: 700; color: #38bdf8; margin-top: 8px; }
+
+    /* Animated chart bar */
+    .chart-box { height: 160px; background: rgba(15, 23, 42, 0.6); border-radius: 12px; padding: 20px; display: flex; align-items: flex-end; gap: 16px; }
+    .bar { flex: 1; background: linear-gradient(180deg, #38bdf8, #2563eb); border-radius: 6px 6px 0 0; transform-origin: bottom; }
+  </style>
+</head>
+<body>
+  <div id="stage" data-composition-id="main">
+    <!-- Scene 1 -->
+    <div id="scene1" class="scene">
+      <div class="window">
+        <div class="window-header">
+          <div class="window-dots">
+            <div class="dot dot-red"></div>
+            <div class="dot dot-yellow"></div>
+            <div class="dot dot-green"></div>
+          </div>
+          <span style="color: #64748b; font-size: 14px; font-weight: 600;">HYPERSCALE ORCHESTRATOR v2.4</span>
+        </div>
+        <div class="badge">LIVE CLUSTER TELEMETRY</div>
+        <div class="hero-title">Zero-Downtime Global Scaling</div>
+        <div class="metric-grid">
+          <div class="card">
+            <div class="card-label">Global Requests / Sec</div>
+            <div id="val1" class="card-value">1,482,900</div>
+          </div>
+          <div class="card">
+            <div class="card-label">Average P99 Latency</div>
+            <div id="val2" class="card-value">12.4 ms</div>
+          </div>
+          <div class="card">
+            <div class="card-label">Auto-Healing Status</div>
+            <div id="val3" class="card-value" style="color: #4ade80;">100% HEALTHY</div>
+          </div>
+        </div>
+        <div class="chart-box">
+          <div class="bar bar-1" style="height: 30%;"></div>
+          <div class="bar bar-2" style="height: 55%;"></div>
+          <div class="bar bar-3" style="height: 45%;"></div>
+          <div class="bar bar-4" style="height: 80%;"></div>
+          <div class="bar bar-5" style="height: 65%;"></div>
+          <div class="bar bar-6" style="height: 95%;"></div>
+          <div class="bar bar-7" style="height: 100%;"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    window.__timelines = window.__timelines || {};
+    const tl = gsap.timeline({ paused: true });
+    window.__timelines["main"] = tl;
+
+    // Timeline Animation Choreography (10s template)
+    tl.to("#scene1", { opacity: 1, duration: 0.8, ease: "power2.out" }, 0)
+      .from(".window", { scale: 0.88, y: 60, duration: 1.2, ease: "cubic-bezier(0.16, 1, 0.3, 1)" }, 0)
+      .from(".card", { y: 30, opacity: 0, stagger: 0.15, duration: 0.8, ease: "back.out(1.4)" }, 0.6)
+      .from(".bar", { scaleY: 0, stagger: 0.08, duration: 0.9, ease: "power3.out" }, 1.0)
+      .to(".window", { rotateY: 5, rotateX: -3, duration: 4, ease: "sine.inOut", yoyo: true, repeat: 1 }, 2.0);
+  </script>
+</body>
+</html>

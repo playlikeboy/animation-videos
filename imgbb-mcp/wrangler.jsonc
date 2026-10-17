@@ -1,0 +1,13 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "imgbb-mcp",
+  "main": "src/index.ts",
+  "compatibility_date": "2025-02-24",
+  "account_id": "091539408595ba99a0ef106d42391d5b",
+  "vars": {
+    "DEFAULT_IMGBB_API_KEY": "f17ca0bb7aec377dd84d30b752c8d6ba"
+  },
+  "observability": {
+    "enabled": true
+  }
+}

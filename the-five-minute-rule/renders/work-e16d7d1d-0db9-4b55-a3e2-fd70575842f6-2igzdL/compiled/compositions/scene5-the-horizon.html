@@ -1,0 +1,252 @@
+<template id="scene5-template">
+  <div data-hf-id="hf-itp1"
+    id="scene5-root"
+    data-composition-id="scene5"
+    data-width="1920"
+    data-height="1080"
+    data-duration="60"
+    style="position: relative; width: 1920px; height: 1080px; overflow: hidden; background: #1b263b;"
+  >
+    <style>
+      [data-composition-id="scene5"] .dawn-sky {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 1920px;
+        height: 700px;
+        background: linear-gradient(180deg, #1b263b 0%, #3e445d 35%, #775253 65%, #c86b51 85%, #f6ae71 100%);
+      }
+
+      [data-composition-id="scene5"] .sun-disk {
+        position: absolute;
+        top: 430px;
+        left: 960px;
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+        background: #fffbeb;
+        box-shadow: 0 0 80px #f59e0b, 0 0 160px #f97316;
+        opacity: 0.85;
+      }
+
+      [data-composition-id="scene5"] .mountain-dawn {
+        position: absolute;
+        top: 460px;
+        left: 0;
+        width: 1920px;
+        height: 180px;
+      }
+
+      [data-composition-id="scene5"] .grass-dawn {
+        position: absolute;
+        top: 540px;
+        left: 0;
+        width: 1920px;
+        height: 540px;
+        background: #3a3832;
+      }
+
+      [data-composition-id="scene5"] .bench-rig {
+        position: absolute;
+        top: 600px;
+        left: 540px;
+        width: 280px;
+        height: 140px;
+      }
+
+      [data-composition-id="scene5"] .proto-dawn {
+        position: absolute;
+        top: 400px;
+        left: 860px;
+        width: 220px;
+        height: 420px;
+        z-index: 50;
+      }
+
+      [data-composition-id="scene5"] .notebook-card {
+        position: absolute;
+        top: 180px;
+        left: 1240px;
+        width: 440px;
+        background: #f8fafc;
+        border-radius: 20px;
+        box-shadow: 0 25px 60px rgba(0, 0, 0, 0.7);
+        padding: 36px 40px;
+        border-left: 14px solid #10b981;
+        opacity: 0;
+        transform: translateY(20px);
+        z-index: 60;
+      }
+
+      [data-composition-id="scene5"] .notebook-day {
+        font-family: 'Inter', sans-serif;
+        font-size: 20px;
+        font-weight: 800;
+        color: #64748b;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        margin-bottom: 12px;
+      }
+
+      [data-composition-id="scene5"] .notebook-task {
+        font-family: 'Inter', sans-serif;
+        font-size: 36px;
+        font-weight: 700;
+        color: #0f172a;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+      }
+
+      [data-composition-id="scene5"] .check-mark {
+        color: #10b981;
+        font-size: 44px;
+        font-weight: 900;
+        opacity: 0;
+      }
+
+      [data-composition-id="scene5"] .film-title-card {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        opacity: 0;
+        z-index: 120;
+      }
+
+      [data-composition-id="scene5"] .film-title-card h1 {
+        font-family: 'Inter', sans-serif;
+        font-size: 84px;
+        font-weight: 900;
+        color: #ffffff;
+        letter-spacing: -0.03em;
+        text-shadow: 0 10px 40px rgba(0, 0, 0, 0.8);
+        margin-bottom: 20px;
+      }
+
+      [data-composition-id="scene5"] .film-title-card p {
+        font-family: 'Inter', sans-serif;
+        font-size: 32px;
+        font-weight: 500;
+        color: #fcd34d;
+        letter-spacing: 0.05em;
+        text-shadow: 0 6px 20px rgba(0, 0, 0, 0.8);
+      }
+    </style>
+
+    <!-- Audio Elements -->
+    <audio data-hf-id="hf-7ygz" id="sfx-chime" src="../assets/audio/sfx/timer-chime.mp3" data-start="0" data-duration="2.50" preload="auto" data-end="2.5"></audio>
+    <audio data-hf-id="hf-xquh" id="vo-scene5" src="../assets/audio/voiceovers/scene5.mp3" data-start="1.5" data-duration="10.35" data-hf-media-start-basis="local" preload="auto" data-end="11.85"></audio>
+
+    <!-- Dawn Sky -->
+    <div data-hf-id="hf-swhv" id="sky" class="dawn-sky clip" data-start="0" data-duration="60"></div>
+    <div data-hf-id="hf-lml4" id="sun" class="sun-disk clip" data-start="0" data-duration="60"></div>
+
+    <!-- Mountain Ridge -->
+    <svg data-hf-id="hf-um21" id="mountain-s5" class="mountain-dawn clip" data-start="0" data-duration="60" viewBox="0 0 1920 180" preserveAspectRatio="none">
+      <path data-hf-id="hf-g3ek" d="M 0 180 L 0 90 Q 400 40, 800 110 Q 1200 60, 1600 120 L 1920 70 L 1920 180 Z" fill="#242834"/>
+    </svg>
+
+    <!-- Grass Surface -->
+    <div data-hf-id="hf-ii3x" id="grass-s5" class="grass-dawn clip" data-layout-allow-overflow="true" data-start="0" data-duration="60"></div>
+
+    <!-- Wooden Park Bench -->
+    <svg data-hf-id="hf-ymef" id="bench-s5" class="bench-rig clip" data-start="0" data-duration="60" viewBox="0 0 280 140">
+      <rect data-hf-id="hf-djd0" x="20" y="40" width="240" height="14" rx="4" fill="#1e1815"/>
+      <rect data-hf-id="hf-l7i2" x="20" y="60" width="240" height="14" rx="4" fill="#1e1815"/>
+      <rect data-hf-id="hf-w4cg" x="20" y="80" width="240" height="14" rx="4" fill="#1e1815"/>
+      <rect data-hf-id="hf-l9cw" x="50" y="90" width="16" height="50" fill="#0d0a08"/>
+      <rect data-hf-id="hf-pfpi" x="214" y="90" width="16" height="50" fill="#0d0a08"/>
+    </svg>
+
+    <!-- Protagonist Silhouette (Standing at sunrise, golden rim light) -->
+    <svg data-hf-id="hf-ckwi" id="proto-standing" class="proto-dawn clip" data-start="0" data-duration="60" viewBox="0 0 220 420">
+      <rect data-hf-id="hf-vqwx" x="65" y="140" width="90" height="150" rx="36" fill="#090c12" stroke="#fcd34d" stroke-width="4"/>
+      <circle data-hf-id="hf-5ppf" cx="110" cy="85" r="48" fill="#090c12" stroke="#fcd34d" stroke-width="4"/>
+      <ellipse data-hf-id="hf-65lu" cx="100" cy="80" rx="6" ry="8" fill="#ffffff"/>
+      <ellipse data-hf-id="hf-x7rw" cx="124" cy="80" rx="6" ry="8" fill="#ffffff"/>
+      <rect data-hf-id="hf-g3zy" x="75" y="280" width="26" height="130" rx="12" fill="#090c12"/>
+      <rect data-hf-id="hf-73gd" x="119" y="280" width="26" height="130" rx="12" fill="#090c12"/>
+      <path data-hf-id="hf-sgl5" d="M 68 150 Q 50 240, 80 270" stroke="#090c12" stroke-width="24" stroke-linecap="round"/>
+      <path data-hf-id="hf-2owv" d="M 152 150 Q 170 240, 140 270" stroke="#090c12" stroke-width="24" stroke-linecap="round"/>
+    </svg>
+
+    <!-- Floating Timer HUD (completing 05:00 goal) -->
+    <div data-hf-id="hf-7v29" id="hud-pill-s5" class="timer-pill clip" data-start="0" data-duration="60" style="border-color: #f59e0b; box-shadow: 0 0 24px rgba(245, 158, 11, 0.4);">
+      <div data-hf-id="hf-u6ju" class="dot" style="background:#10b981; box-shadow:0 0 12px #10b981;"></div>
+      <div data-hf-id="hf-0joj" class="time-digits" style="color: #10b981;">05:00</div>
+      <div data-hf-id="hf-iy2a" class="goal-text" style="color: #10b981;">COMPLETED</div>
+    </div>
+
+    <!-- Notebook Card Overlay -->
+    <div data-hf-id="hf-9j0g" id="notebook-overlay" class="notebook-card clip" data-layout-allow-occlusion="true" data-start="0" data-duration="60">
+      <div data-hf-id="hf-10b2" class="notebook-day" data-layout-allow-occlusion="true">Day 1 • 5:35 AM</div>
+      <div data-hf-id="hf-9k2a" class="notebook-task" data-layout-allow-occlusion="true">
+        5 Minutes Walk <span data-hf-id="hf-9vva" id="check-tick" class="check-mark" data-layout-allow-occlusion="true">✓</span>
+      </div>
+    </div>
+
+    <!-- Subtitle -->
+    <div data-hf-id="hf-upmm" id="subtitle-s5" class="cinematic-subtitle clip" data-start="0" data-duration="60" style="opacity: 0;">
+      "A mountain is not moved all at once; it is moved stone by stone."
+    </div>
+
+    <!-- Final Title Reveal Card -->
+    <div data-hf-id="hf-nylh" id="title-card" class="film-title-card clip" data-start="0" data-duration="60">
+      <h1 data-hf-id="hf-e3fx">THE 5-MINUTE RULE</h1>
+      <p data-hf-id="hf-97zv">Your journey begins with five minutes.</p>
+    </div>
+
+    <!-- Vignette Overlay -->
+    <div data-hf-id="hf-55i3" id="vignette-s5" class="cinematic-vignette clip" data-layout-allow-occlusion="true" data-start="0" data-duration="60"></div>
+
+    <script>
+      (function() {
+        const tl = gsap.timeline({ paused: true });
+
+        // Sun slowly rises above horizon (0s to 18s)
+        tl.to('[data-composition-id="scene5"] #sun', { y: -80, opacity: 1, duration: 18, ease: "power1.out" }, 0);
+
+        // Subtitles & Voiceover sync
+        tl.to('[data-composition-id="scene5"] #subtitle-s5', { opacity: 1, duration: 0.8 }, 1.5);
+        tl.call(() => {
+          const sub = document.querySelector('[data-composition-id="scene5"] #subtitle-s5');
+          if (sub) sub.textContent = "A mountain is not moved all at once; it is moved stone by stone.";
+        }, null, 1.5);
+
+        // Notebook card slides in
+        tl.to('[data-composition-id="scene5"] #notebook-overlay', { opacity: 1, y: 0, duration: 1.0, ease: "power2.out" }, 4.0);
+        tl.to('[data-composition-id="scene5"] #check-tick', { opacity: 1, scale: 1.2, duration: 0.4, ease: "back.out(2)" }, 5.5);
+
+        tl.call(() => {
+          const sub = document.querySelector('[data-composition-id="scene5"] #subtitle-s5');
+          if (sub) sub.textContent = "You don't need endless motivation to change your life.";
+        }, null, 6.5);
+
+        tl.call(() => {
+          const sub = document.querySelector('[data-composition-id="scene5"] #subtitle-s5');
+          if (sub) sub.textContent = "You only need the courage to give yourself five minutes.";
+        }, null, 11.0);
+
+        // Camera cranes upward into the glowing sunrise
+        tl.to('[data-composition-id="scene5"] #notebook-overlay, [data-composition-id="scene5"] #hud-pill-s5, [data-composition-id="scene5"] #subtitle-s5', { opacity: 0, duration: 2.5 }, 18.0);
+        tl.to('[data-composition-id="scene5"] #proto-standing, [data-composition-id="scene5"] #bench-s5, [data-composition-id="scene5"] #grass-s5', { y: 240, opacity: 0.4, duration: 10, ease: "power2.inOut" }, 18.0);
+        tl.to('[data-composition-id="scene5"] #sun', { scale: 1.8, y: -160, duration: 12, ease: "power2.inOut" }, 18.0);
+
+        // Final Title Card Reveal
+        tl.fromTo('[data-composition-id="scene5"] #title-card', 
+          { opacity: 0, scale: 0.9 }, 
+          { opacity: 1, scale: 1.0, duration: 2.5, ease: "power2.out" }, 
+          24.0
+        );
+
+        // Fade out to black at the end of the film
+        tl.to('[data-composition-id="scene5"]', { opacity: 0, duration: 3.5 }, 56.5);
+
+        window.__timelines = window.__timelines || {};
+        window.__timelines["scene5"] = tl;
+      })();
+    </script>
+  </div>
+</template>

@@ -1,0 +1,313 @@
+<template id="scene1-template">
+  <div data-hf-id="hf-3tcb"
+    id="scene1-root"
+    data-composition-id="scene1"
+    data-width="1920"
+    data-height="1080"
+    data-duration="60"
+    style="position: relative; width: 1920px; height: 1080px; overflow: hidden; background: #060910;"
+  >
+    <style>
+      [data-composition-id="scene1"] .room-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 1920px;
+        height: 1080px;
+        background: radial-gradient(circle at 65% 50%, #151e2e 0%, #0d131f 50%, #060910 100%);
+      }
+
+      [data-composition-id="scene1"] .blinds-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 1920px;
+        height: 1080px;
+        background: repeating-linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 0.45) 0px,
+          rgba(0, 0, 0, 0.45) 28px,
+          transparent 28px,
+          transparent 56px
+        );
+        pointer-events: none;
+        opacity: 0.7;
+      }
+
+      [data-composition-id="scene1"] .phone-wrapper {
+        position: absolute;
+        top: 140px;
+        left: 820px;
+        width: 440px;
+        height: 800px;
+        background: #111a2d;
+        border-radius: 64px;
+        border: 10px solid #23314d;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.9), 0 0 80px rgba(35, 49, 77, 0.4);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 120px;
+        overflow: hidden;
+        z-index: 20;
+      }
+
+      [data-composition-id="scene1"] .phone-notch {
+        position: absolute;
+        top: 18px;
+        width: 130px;
+        height: 28px;
+        background: #090e18;
+        border-radius: 20px;
+      }
+
+      [data-composition-id="scene1"] .phone-date {
+        font-family: 'Inter', sans-serif;
+        font-size: 32px;
+        font-weight: 500;
+        color: #94a3b8;
+        margin-bottom: 8px;
+      }
+
+      [data-composition-id="scene1"] .phone-time {
+        font-family: 'Inter', sans-serif;
+        font-size: 142px;
+        font-weight: 700;
+        color: #ffffff;
+        line-height: 1;
+        letter-spacing: -0.04em;
+        margin-bottom: 12px;
+      }
+
+      [data-composition-id="scene1"] .phone-label {
+        font-family: 'Inter', sans-serif;
+        font-size: 30px;
+        font-weight: 800;
+        color: #94a3b8;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        margin-bottom: 110px;
+      }
+
+      [data-composition-id="scene1"] .phone-btn-snooze {
+        width: 320px;
+        height: 74px;
+        background: #ffffff;
+        border-radius: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Inter', sans-serif;
+        font-size: 30px;
+        font-weight: 800;
+        color: #0f172a;
+        letter-spacing: 0.04em;
+        box-shadow: 0 8px 24px rgba(255, 255, 255, 0.25);
+        margin-bottom: 24px;
+      }
+
+      [data-composition-id="scene1"] .phone-btn-stop {
+        width: 220px;
+        height: 60px;
+        border-radius: 35px;
+        border: 2px solid #334155;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Inter', sans-serif;
+        font-size: 24px;
+        font-weight: 700;
+        color: #64748b;
+        letter-spacing: 0.05em;
+      }
+
+      [data-composition-id="scene1"] .hand-rig {
+        position: absolute;
+        bottom: -60px;
+        left: 640px;
+        width: 400px;
+        height: 480px;
+        pointer-events: none;
+        z-index: 50;
+      }
+
+      [data-composition-id="scene1"] .thought-scene1 {
+        top: 280px;
+        left: 180px;
+        opacity: 0;
+      }
+
+      [data-composition-id="scene1"] .calendar-ghost {
+        position: absolute;
+        top: 200px;
+        left: 160px;
+        width: 480px;
+        height: 380px;
+        border: 2px solid rgba(255, 255, 255, 0.08);
+        border-radius: 20px;
+        background: rgba(15, 23, 42, 0.6);
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        gap: 8px;
+        padding: 20px;
+        opacity: 0;
+        z-index: 20;
+      }
+
+      [data-composition-id="scene1"] .calendar-ghost .day-cell {
+        background: rgba(255, 255, 255, 0.04);
+        border-radius: 6px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+        color: #94a3b8;
+      }
+
+      [data-composition-id="scene1"] .calendar-ghost .day-cross {
+        position: absolute;
+        color: #ef4444;
+        font-size: 24px;
+        font-weight: 900;
+        opacity: 0;
+      }
+    </style>
+
+    <!-- Audio Elements -->
+    <audio data-hf-id="hf-gbk4" id="sfx-alarm" src="../assets/audio/sfx/alarm-beep.mp3" data-start="0" data-duration="1.80" preload="auto" data-end="1.8"></audio>
+    <audio data-hf-id="hf-24v4" id="vo-scene1" src="../assets/audio/voiceovers/scene1.mp3" data-start="4.5" data-duration="13.23" data-hf-media-start-basis="local" preload="auto" data-end="17.73"></audio>
+
+    <!-- Background -->
+    <div data-hf-id="hf-s3vj" id="bg-room-s1" class="room-bg clip" data-start="0" data-duration="60"></div>
+    <div data-hf-id="hf-7xus" id="blinds-s1" class="blinds-overlay clip" data-start="0" data-duration="60"></div>
+
+    <!-- Calendar montage representing lost days -->
+    <div data-hf-id="hf-zp09" id="calendar-board" class="calendar-ghost clip" data-layout-allow-overlap="true" data-start="0" data-duration="60">
+      <div data-hf-id="hf-3h92" class="day-cell" data-layout-allow-overlap="true">1<span data-hf-id="hf-esbj" class="day-cross cross-1">✕</span></div>
+      <div data-hf-id="hf-3vk3" class="day-cell" data-layout-allow-overlap="true">2<span data-hf-id="hf-vjxm" class="day-cross cross-2">✕</span></div>
+      <div data-hf-id="hf-49v4" class="day-cell" data-layout-allow-overlap="true">3<span data-hf-id="hf-bebx" class="day-cross cross-3">✕</span></div>
+      <div data-hf-id="hf-1hpx" class="day-cell" data-layout-allow-overlap="true">4<span data-hf-id="hf-65x4" class="day-cross cross-4">✕</span></div>
+      <div data-hf-id="hf-1w0y" class="day-cell" data-layout-allow-overlap="true">5<span data-hf-id="hf-nv5f" class="day-cross cross-5">✕</span></div>
+      <div data-hf-id="hf-2abz" class="day-cell" data-layout-allow-overlap="true">6<span data-hf-id="hf-otoe" class="day-cross cross-6">✕</span></div>
+      <div data-hf-id="hf-2on0" class="day-cell" data-layout-allow-overlap="true">7<span data-hf-id="hf-g1y9" class="day-cross cross-7">✕</span></div>
+      <div data-hf-id="hf-zwht" class="day-cell" data-layout-allow-overlap="true">8<span data-hf-id="hf-vvrg" class="day-cross cross-8">✕</span></div>
+      <div data-hf-id="hf-0asu" class="day-cell" data-layout-allow-overlap="true">9<span data-hf-id="hf-0v6v" class="day-cross cross-9">✕</span></div>
+      <div data-hf-id="hf-kez6" class="day-cell" data-layout-allow-overlap="true">10<span data-hf-id="hf-mq47" class="day-cross cross-10">✕</span></div>
+      <div data-hf-id="hf-k0o5" class="day-cell" data-layout-allow-overlap="true">11<span data-hf-id="hf-o93w" class="day-cross cross-11">✕</span></div>
+      <div data-hf-id="hf-l7l8" class="day-cell" data-layout-allow-overlap="true">12<span data-hf-id="hf-rmpx" class="day-cross cross-12">✕</span></div>
+      <div data-hf-id="hf-kta7" class="day-cell" data-layout-allow-overlap="true">13<span data-hf-id="hf-6wv6" class="day-cross cross-13">✕</span></div>
+      <div data-hf-id="hf-m07a" class="day-cell" data-layout-allow-overlap="true">14<span data-hf-id="hf-j3gr" class="day-cross cross-14">✕</span></div>
+      <div data-hf-id="hf-llw9" class="day-cell" data-layout-allow-overlap="true">15<span data-hf-id="hf-kmgg" class="day-cross cross-15">✕</span></div>
+      <div data-hf-id="hf-mstc" class="day-cell" data-layout-allow-overlap="true">16<span data-hf-id="hf-36u1" class="day-cross cross-16">✕</span></div>
+      <div data-hf-id="hf-meib" class="day-cell" data-layout-allow-overlap="true">17<span data-hf-id="hf-i3qu" class="day-cross cross-17">✕</span></div>
+      <div data-hf-id="hf-h8iy" class="day-cell" data-layout-allow-overlap="true">18<span data-hf-id="hf-75nz" class="day-cross cross-18">✕</span></div>
+      <div data-hf-id="hf-gu7x" class="day-cell" data-layout-allow-overlap="true">19<span data-hf-id="hf-mz5g" class="day-cross cross-19">✕</span></div>
+      <div data-hf-id="hf-jnbd" class="day-cell" data-layout-allow-overlap="true">20<span data-hf-id="hf-ghf8" class="day-cross cross-20">✕</span></div>
+      <div data-hf-id="hf-k1me" class="day-cell" data-layout-allow-overlap="true">21<span data-hf-id="hf-28mn" class="day-cross cross-21">✕</span></div>
+      <div data-hf-id="hf-kfxf" class="day-cell" data-layout-allow-overlap="true">22<span data-hf-id="hf-d0ca" class="day-cross cross-22">✕</span></div>
+      <div data-hf-id="hf-ku8g" class="day-cell" data-layout-allow-overlap="true">23<span data-hf-id="hf-1j31" class="day-cross cross-23">✕</span></div>
+      <div data-hf-id="hf-i239" class="day-cell" data-layout-allow-overlap="true">24<span data-hf-id="hf-roaw" class="day-cross cross-24">✕</span></div>
+      <div data-hf-id="hf-igea" class="day-cell" data-layout-allow-overlap="true">25<span data-hf-id="hf-9dj7" class="day-cross cross-25">✕</span></div>
+      <div data-hf-id="hf-iupb" class="day-cell" data-layout-allow-overlap="true">26<span data-hf-id="hf-er9q" class="day-cross cross-26">✕</span></div>
+      <div data-hf-id="hf-j90c" class="day-cell" data-layout-allow-overlap="true">27<span data-hf-id="hf-vf5d" class="day-cross cross-27">✕</span></div>
+      <div data-hf-id="hf-ggv5" class="day-cell" data-layout-allow-overlap="true">28<span data-hf-id="hf-o3q4" class="day-cross cross-28">✕</span></div>
+    </div>
+
+    <!-- Smartphone -->
+    <div data-hf-id="hf-9ded" id="phone-stage" class="phone-wrapper clip" data-start="0" data-duration="60">
+      <div data-hf-id="hf-c27x" class="phone-notch"></div>
+      <div data-hf-id="hf-3xzu" class="phone-date">Tue, Oct 21</div>
+      <div data-hf-id="hf-0zcx" id="phone-clock" class="phone-time">5:30</div>
+      <div data-hf-id="hf-6j81" class="phone-label">RUN 5 MIN</div>
+      <div data-hf-id="hf-qjz1" id="btn-snooze" class="phone-btn-snooze">SNOOZE</div>
+      <div data-hf-id="hf-1sf0" class="phone-btn-stop">STOP</div>
+    </div>
+
+    <!-- Silhouette Hand (SVG) -->
+    <svg data-hf-id="hf-95ym" id="hand" class="hand-rig clip" data-layout-allow-overflow="true" data-start="0" data-duration="60" viewBox="0 0 400 480">
+      <path data-hf-id="hf-654g" d="M 0 480 L 160 260 L 220 200 L 245 160 C 250 150, 265 155, 260 170 L 240 220 L 255 210 C 265 205, 275 215, 268 225 L 250 250 L 260 245 C 270 240, 278 250, 272 260 L 240 300 L 180 380 L 120 480 Z" fill="#090d14"/>
+      <path data-hf-id="hf-kxt8" d="M 235 165 C 242 153, 258 158, 252 172 L 230 220" stroke="rgba(255, 255, 255, 0.15)" stroke-width="2" fill="none"/>
+    </svg>
+
+    <!-- On-screen Dialogue Thought (Last Soul exact styling) -->
+    <div data-hf-id="hf-mtft" id="thought-bubble" class="story-dialogue thought-scene1 clip" data-layout-allow-overlap="true" data-start="0" data-duration="60">
+      It's just five minutes.
+    </div>
+
+    <!-- Bottom Subtitle -->
+    <div data-hf-id="hf-39rg" id="subtitle" class="cinematic-subtitle clip" data-start="0" data-duration="60" style="opacity: 0;">
+      "Every morning begins with a negotiation with yourself."
+    </div>
+
+    <!-- Vignette Overlay -->
+    <div data-hf-id="hf-qbwf" id="vignette-s1" class="cinematic-vignette clip" data-layout-allow-occlusion="true" data-start="0" data-duration="60"></div>
+
+    <script>
+      (function() {
+        const tl = gsap.timeline({ paused: true });
+
+        // 0s - 3s: Alarm pulses, hand moves into frame towards snooze button
+        tl.fromTo('[data-composition-id="scene1"] #hand', 
+          { x: -140, y: 180, opacity: 0 }, 
+          { x: 0, y: 0, opacity: 1, duration: 2.5, ease: "power2.out" }, 
+          0.5
+        );
+
+        // Button snooze press interaction at 3s
+        tl.to('[data-composition-id="scene1"] #btn-snooze', { scale: 0.94, backgroundColor: "#cbd5e1", duration: 0.15 }, 3.0);
+        tl.to('[data-composition-id="scene1"] #btn-snooze', { scale: 1.0, backgroundColor: "#ffffff", duration: 0.2 }, 3.15);
+
+        // Thought pops in at 3.4s
+        tl.fromTo('[data-composition-id="scene1"] #thought-bubble', 
+          { opacity: 0, y: 20 }, 
+          { opacity: 1, y: 0, duration: 0.8, ease: "back.out(1.4)" }, 
+          3.4
+        );
+
+        // Subtitles change to match voiceover
+        tl.to('[data-composition-id="scene1"] #subtitle', { opacity: 1, duration: 0.6 }, 4.5);
+        tl.call(() => {
+          const sub = document.querySelector('[data-composition-id="scene1"] #subtitle');
+          if (sub) sub.textContent = "Every morning begins with a negotiation with yourself.";
+        }, null, 4.5);
+
+        // Hand slowly retracts
+        tl.to('[data-composition-id="scene1"] #hand', { x: 40, y: 160, opacity: 0.6, duration: 3.5, ease: "power1.inOut" }, 4.0);
+
+        // Camera zooms out gently from 7s, revealing calendar
+        tl.to('[data-composition-id="scene1"] #phone-stage', { x: 180, scale: 0.85, duration: 6, ease: "power2.inOut" }, 7.0);
+        tl.to('[data-composition-id="scene1"] #calendar-board', { opacity: 1, duration: 2 }, 8.0);
+
+        // Days cross out sequentially in fast motion (representing lost days)
+        for (let i = 1; i <= 28; i++) {
+          tl.to(`[data-composition-id="scene1"] .cross-${i}`, { opacity: 0.9, scale: 1.2, duration: 0.1 }, 9.0 + (i * 0.18));
+        }
+
+        tl.call(() => {
+          const sub = document.querySelector('[data-composition-id="scene1"] #subtitle');
+          if (sub) sub.textContent = "You promised that today would be different. But when 5:30 arrives...";
+        }, null, 10.0);
+
+        tl.call(() => {
+          const sub = document.querySelector('[data-composition-id="scene1"] #subtitle');
+          if (sub) sub.textContent = "The mountain feels too steep to climb. So you hit snooze.";
+        }, null, 15.0);
+
+        tl.call(() => {
+          const sub = document.querySelector('[data-composition-id="scene1"] #subtitle');
+          if (sub) sub.textContent = "And the days slip quietly through your fingers.";
+        }, null, 20.0);
+
+        // Thought fades out cleanly before calendar appears
+        tl.to('[data-composition-id="scene1"] #thought-bubble', { opacity: 0, y: -10, duration: 0.8 }, 7.0);
+
+        // Fade down for transition to Scene 2 at end of minute
+        tl.to('[data-composition-id="scene1"] #phone-stage, [data-composition-id="scene1"] #calendar-board, [data-composition-id="scene1"] #subtitle', { opacity: 0, duration: 2.5 }, 56.5);
+
+        window.__timelines = window.__timelines || {};
+        window.__timelines["scene1"] = tl;
+      })();
+    </script>
+  </div>
+</template>

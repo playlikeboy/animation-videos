@@ -1,0 +1,1186 @@
+{
+  "version": 1,
+  "historyId": "9827c4f3-d4de-44fa-92ad-bea8c42cecf0",
+  "currentRevision": "5538e985-ecb7-4749-a8a5-265f4cc96496",
+  "pendingChanges": false,
+  "files": {
+    "AGENTS.md": {
+      "hash": "1d4f0c8ca2507b94fd7c9df709fff01416adbd51a0f922b9d6ed2f40129147d5",
+      "content": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/1d/1d4f0c8ca2507b94fd7c9df709fff01416adbd51a0f922b9d6ed2f40129147d5"
+    },
+    "CLAUDE.md": {
+      "hash": "1d4f0c8ca2507b94fd7c9df709fff01416adbd51a0f922b9d6ed2f40129147d5",
+      "content": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/1d/1d4f0c8ca2507b94fd7c9df709fff01416adbd51a0f922b9d6ed2f40129147d5"
+    },
+    "hyperframes.json": {
+      "hash": "af029625c436e6d83d0e52c8d4abf3b93cfa7d55046a9b9ef0daa67fdf4ed770",
+      "content": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/af/af029625c436e6d83d0e52c8d4abf3b93cfa7d55046a9b9ef0daa67fdf4ed770"
+    },
+    "index.html": {
+      "hash": "504f764750d8dd58e2d0e50ae5baf0c97223bc7247e93a40b4bc380bccb1fa8f",
+      "content": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/50/504f764750d8dd58e2d0e50ae5baf0c97223bc7247e93a40b4bc380bccb1fa8f"
+    },
+    "meta.json": {
+      "hash": "dd68531de6eb9a67a7a16e91a50c955ed916b4825918df7b2c029c4a76218f2b",
+      "content": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/dd/dd68531de6eb9a67a7a16e91a50c955ed916b4825918df7b2c029c4a76218f2b"
+    },
+    "package.json": {
+      "hash": "8c2eeea925f7c97dd391b60b74d9ed172bf016953d5af2f6d01aa6a784a2d4cb",
+      "content": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/8c/8c2eeea925f7c97dd391b60b74d9ed172bf016953d5af2f6d01aa6a784a2d4cb"
+    },
+    "assets/audio/music/ambient-soundtrack.mp3": {
+      "hash": "91b5659c63f34447b9a706eb3f5fa72e013a318b23d8f787c3521fb934c21237",
+      "content": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/91/91b5659c63f34447b9a706eb3f5fa72e013a318b23d8f787c3521fb934c21237"
+    },
+    "assets/audio/sfx/alarm-beep.mp3": {
+      "hash": "794459b5ac30ee35b481036219ca9898ae579b7a78b3ccc87f99ddc422265dd5",
+      "content": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/79/794459b5ac30ee35b481036219ca9898ae579b7a78b3ccc87f99ddc422265dd5"
+    },
+    "assets/audio/sfx/timer-chime.mp3": {
+      "hash": "21989b981b0c4b9bdd6d0761876b91f049457a8c5be4159b46cc0fd30b2889a0",
+      "content": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/21/21989b981b0c4b9bdd6d0761876b91f049457a8c5be4159b46cc0fd30b2889a0"
+    },
+    "assets/audio/voiceovers/scene1.mp3": {
+      "hash": "4e0d84a091e0a6a19bf7f7175652f08b375d289532cbc48f4b0c3d9327b3f100",
+      "content": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/4e/4e0d84a091e0a6a19bf7f7175652f08b375d289532cbc48f4b0c3d9327b3f100"
+    },
+    "assets/audio/voiceovers/scene2.mp3": {
+      "hash": "90e7dd26f5ea90e01ff2b6c852926089b750e8f7652ca85223c89d0f233aedc0",
+      "content": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/90/90e7dd26f5ea90e01ff2b6c852926089b750e8f7652ca85223c89d0f233aedc0"
+    },
+    "assets/audio/voiceovers/scene3.mp3": {
+      "hash": "af3cf66a53fb123e805f1c7541336966528bbdbfa01d6b484bfd064a7c2b5be0",
+      "content": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/af/af3cf66a53fb123e805f1c7541336966528bbdbfa01d6b484bfd064a7c2b5be0"
+    },
+    "assets/audio/voiceovers/scene4.mp3": {
+      "hash": "7d6b840d6ac9add1eaae301e967328823a036e26766328f0c40c308db74065ef",
+      "content": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/7d/7d6b840d6ac9add1eaae301e967328823a036e26766328f0c40c308db74065ef"
+    },
+    "assets/audio/voiceovers/scene5.mp3": {
+      "hash": "f1ee8beb6a275237c9cb19bebb662c620d2caa81c050d415eff38a4964e18650",
+      "content": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/f1/f1ee8beb6a275237c9cb19bebb662c620d2caa81c050d415eff38a4964e18650"
+    },
+    "assets/css/cinematic-theme.css": {
+      "hash": "4306a162d3e1520ce44d83ff892b65a2698d8c4d81b7a808405bcdaec7d6821b",
+      "content": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/43/4306a162d3e1520ce44d83ff892b65a2698d8c4d81b7a808405bcdaec7d6821b"
+    },
+    "compositions/components/grain-overlay.html": {
+      "hash": "97a0da8f26feca9574abcf08b8186cef10ea4819b2aeabc30547ae16ed9ae80d",
+      "content": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/97/97a0da8f26feca9574abcf08b8186cef10ea4819b2aeabc30547ae16ed9ae80d"
+    },
+    "compositions/components/vignette.html": {
+      "hash": "b825476ca7bb89c0afbd6f1157b9813ac6a1ac82e9aa13a7cecd7ae305ebb2d5",
+      "content": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/b8/b825476ca7bb89c0afbd6f1157b9813ac6a1ac82e9aa13a7cecd7ae305ebb2d5"
+    },
+    "compositions/scene1-the-alarm.html": {
+      "hash": "fdbfddad6d3ded98961e6559b091e78b47731fe07749485352467dfdf7e6a9a3",
+      "content": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/fd/fdbfddad6d3ded98961e6559b091e78b47731fe07749485352467dfdf7e6a9a3"
+    },
+    "compositions/scene2-the-mountain.html": {
+      "hash": "10609d543b30c3ba501a60aaa0059961559c11f0e93cf73a1e05c3c9ec0917c6",
+      "content": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/10/10609d543b30c3ba501a60aaa0059961559c11f0e93cf73a1e05c3c9ec0917c6"
+    },
+    "compositions/scene3-the-encounter.html": {
+      "hash": "ecd75b6c983dfb3b5c77cba6ebf2b6bc62a1a62c3814f172c3833f47e690865d",
+      "content": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/ec/ecd75b6c983dfb3b5c77cba6ebf2b6bc62a1a62c3814f172c3833f47e690865d"
+    },
+    "compositions/scene4-the-first-stride.html": {
+      "hash": "6a6e30d49a58e3824f4f9a794b28f4e32fa431e65743ce1cfe14041e109da2fc",
+      "content": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/6a/6a6e30d49a58e3824f4f9a794b28f4e32fa431e65743ce1cfe14041e109da2fc"
+    },
+    "compositions/scene5-the-horizon.html": {
+      "hash": "0f9317d0127e59eae168c8a2de1abb3b2fb74e09b62344857368d14e5477ab2a",
+      "content": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/0f/0f9317d0127e59eae168c8a2de1abb3b2fb74e09b62344857368d14e5477ab2a"
+    },
+    "generate_audio.py": {
+      "hash": "720c7c3a68e46bf7da74b14df919a8c862e968c2b716a6bf5c1811e8afd9670c",
+      "content": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/72/720c7c3a68e46bf7da74b14df919a8c862e968c2b716a6bf5c1811e8afd9670c"
+    },
+    "hyperframes.lock.json": {
+      "hash": "8ea6c44d1b7a6830c15a6369003da0a2f6ca41931bf15799fb283ecd49948f0d",
+      "content": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/8e/8ea6c44d1b7a6830c15a6369003da0a2f6ca41931bf15799fb283ecd49948f0d"
+    },
+    "SCRIPT_AND_STORYBOARD.md": {
+      "hash": "7aa10fbf5fa58b13b1f9ee7c7ff0804c1e67a71627fd8b6ddc4833e8c519c515",
+      "content": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/7a/7aa10fbf5fa58b13b1f9ee7c7ff0804c1e67a71627fd8b6ddc4833e8c519c515"
+    },
+    "snapshots/contact-sheet.jpg": {
+      "hash": "3683512d431bd1f2b110dee8ec5d398f16dfa226e9c021c6bcd9545ae0bc7575",
+      "content": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/36/3683512d431bd1f2b110dee8ec5d398f16dfa226e9c021c6bcd9545ae0bc7575"
+    },
+    "snapshots/descriptions.md": {
+      "hash": "bba6900797d8957b9eb88ed338bb915a25e6b52ff05a268baf9708f4e5cc6964",
+      "content": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/bb/bba6900797d8957b9eb88ed338bb915a25e6b52ff05a268baf9708f4e5cc6964"
+    },
+    "snapshots/frame-00-at-3.5s.png": {
+      "hash": "90f4caf1d8f8fd95c9fdb92ab0cdf9fe5b1572401e5b9edda673849f96a25dc7",
+      "content": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/90/90f4caf1d8f8fd95c9fdb92ab0cdf9fe5b1572401e5b9edda673849f96a25dc7"
+    },
+    "snapshots/frame-01-at-65s.png": {
+      "hash": "a145035390d5a776f804e1cd7a4cf77a07d784955e1c528e110d199826e8e309",
+      "content": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/a1/a145035390d5a776f804e1cd7a4cf77a07d784955e1c528e110d199826e8e309"
+    },
+    "snapshots/frame-02-at-125s.png": {
+      "hash": "2605cb77feed104298b54dc445e5d5251598173784bf5de3f2f4b676ffb0e6eb",
+      "content": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/26/2605cb77feed104298b54dc445e5d5251598173784bf5de3f2f4b676ffb0e6eb"
+    },
+    "snapshots/frame-03-at-185s.png": {
+      "hash": "860ba855980bcb3080d3df5df3534fcbaa0d66750f6f728abbcfd58aaaaef4b6",
+      "content": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/86/860ba855980bcb3080d3df5df3534fcbaa0d66750f6f728abbcfd58aaaaef4b6"
+    },
+    "snapshots/frame-04-at-270s.png": {
+      "hash": "94913a0dae0f0f7e0601508890808aa78300e9f4b0a75fa0b76a309fba7363d7",
+      "content": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/94/94913a0dae0f0f7e0601508890808aa78300e9f4b0a75fa0b76a309fba7363d7"
+    },
+    "snapshots/frame-05-at-291s.png": {
+      "hash": "94913a0dae0f0f7e0601508890808aa78300e9f4b0a75fa0b76a309fba7363d7",
+      "content": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/94/94913a0dae0f0f7e0601508890808aa78300e9f4b0a75fa0b76a309fba7363d7"
+    }
+  },
+  "revisions": {
+    "571eed41-d47a-4cd7-83f4-e2ae25aa4563": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1792248604611,
+      "endedAt": 1792248604652,
+      "files": {
+        "assets/audio/music/ambient-soundtrack.mp3": {
+          "before": null,
+          "after": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/91/91b5659c63f34447b9a706eb3f5fa72e013a318b23d8f787c3521fb934c21237"
+        },
+        "assets/audio/sfx/alarm-beep.mp3": {
+          "before": null,
+          "after": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/79/794459b5ac30ee35b481036219ca9898ae579b7a78b3ccc87f99ddc422265dd5"
+        },
+        "assets/audio/sfx/timer-chime.mp3": {
+          "before": null,
+          "after": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/21/21989b981b0c4b9bdd6d0761876b91f049457a8c5be4159b46cc0fd30b2889a0"
+        },
+        "assets/audio/voiceovers/scene1.mp3": {
+          "before": null,
+          "after": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/4e/4e0d84a091e0a6a19bf7f7175652f08b375d289532cbc48f4b0c3d9327b3f100"
+        },
+        "assets/audio/voiceovers/scene2.mp3": {
+          "before": null,
+          "after": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/90/90e7dd26f5ea90e01ff2b6c852926089b750e8f7652ca85223c89d0f233aedc0"
+        },
+        "assets/audio/voiceovers/scene3.mp3": {
+          "before": null,
+          "after": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/af/af3cf66a53fb123e805f1c7541336966528bbdbfa01d6b484bfd064a7c2b5be0"
+        },
+        "assets/audio/voiceovers/scene4.mp3": {
+          "before": null,
+          "after": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/7d/7d6b840d6ac9add1eaae301e967328823a036e26766328f0c40c308db74065ef"
+        },
+        "assets/audio/voiceovers/scene5.mp3": {
+          "before": null,
+          "after": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/f1/f1ee8beb6a275237c9cb19bebb662c620d2caa81c050d415eff38a4964e18650"
+        },
+        "assets/css/cinematic-theme.css": {
+          "before": null,
+          "after": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/b7/b7f931ff216c304e2271cb769661c7cff431ab1a66ce32cd11cfbc6aa75dd5c0"
+        },
+        "compositions/components/grain-overlay.html": {
+          "before": null,
+          "after": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/97/97a0da8f26feca9574abcf08b8186cef10ea4819b2aeabc30547ae16ed9ae80d"
+        },
+        "compositions/components/vignette.html": {
+          "before": null,
+          "after": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/b8/b825476ca7bb89c0afbd6f1157b9813ac6a1ac82e9aa13a7cecd7ae305ebb2d5"
+        },
+        "compositions/scene1-the-alarm.html": {
+          "before": null,
+          "after": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/bf/bf1eec580e5f4f2d57c0ca0b862f5b426d2d5a63887b1c317a648c9d59ca6d19"
+        },
+        "compositions/scene2-the-mountain.html": {
+          "before": null,
+          "after": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/98/983c1ac67bf2e075695ff9963c7b09d3430c68b27296d045f05656f9c14f2075"
+        },
+        "compositions/scene3-the-encounter.html": {
+          "before": null,
+          "after": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/e0/e04b2f645fcca5107cc3d54c0352d440f2c44663618c146613bedba8583e4c9c"
+        },
+        "compositions/scene4-the-first-stride.html": {
+          "before": null,
+          "after": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/32/325530d9830b971afe611218e0e30f16284179cdd8145258b7983d1f46ce67de"
+        },
+        "compositions/scene5-the-horizon.html": {
+          "before": null,
+          "after": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/88/882c2d440f6194b8b5efdcb62a131e57a7ad26823b76990df3362efe2b14c6db"
+        },
+        "generate_audio.py": {
+          "before": null,
+          "after": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/72/720c7c3a68e46bf7da74b14df919a8c862e968c2b716a6bf5c1811e8afd9670c"
+        },
+        "hyperframes.json": {
+          "before": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/53/53dbce1e19aa713cbb12ee0bc4d206143b45ab15e6ffbfcaa8f69572d4d24d50",
+          "after": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/af/af029625c436e6d83d0e52c8d4abf3b93cfa7d55046a9b9ef0daa67fdf4ed770"
+        },
+        "hyperframes.lock.json": {
+          "before": null,
+          "after": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/8e/8ea6c44d1b7a6830c15a6369003da0a2f6ca41931bf15799fb283ecd49948f0d"
+        },
+        "index.html": {
+          "before": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/a6/a67041f0565132fbe8ac3091afc0810810d5a944aa6e212ee1d8ee5cfbf93e45",
+          "after": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/80/80aafdea3d5bfcaf3a398ecfa6bd96b17259f85fc7de73ac8a4bf298f9e0efcf"
+        },
+        "SCRIPT_AND_STORYBOARD.md": {
+          "before": null,
+          "after": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/7a/7aa10fbf5fa58b13b1f9ee7c7ff0804c1e67a71627fd8b6ddc4833e8c519c515"
+        }
+      }
+    },
+    "a56132ea-6fb3-4a05-bf54-aac60e7defc6": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1792248832753,
+      "endedAt": 1792248832762,
+      "files": {
+        "assets/css/cinematic-theme.css": {
+          "before": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/b7/b7f931ff216c304e2271cb769661c7cff431ab1a66ce32cd11cfbc6aa75dd5c0",
+          "after": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/9c/9c3f5929aeeb4622138b12290c43798bcb9610fd18dc07087865588416d670a5"
+        },
+        "compositions/scene1-the-alarm.html": {
+          "before": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/bf/bf1eec580e5f4f2d57c0ca0b862f5b426d2d5a63887b1c317a648c9d59ca6d19",
+          "after": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/25/2538ab0b213cf349046dd54681765b6eb301410e6a5ad2cf452de4f9d9b8263d"
+        },
+        "compositions/scene2-the-mountain.html": {
+          "before": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/98/983c1ac67bf2e075695ff9963c7b09d3430c68b27296d045f05656f9c14f2075",
+          "after": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/34/34cee562231d98f8869611a910f8e5489f00b09087c0c9baab98fc0334cbad14"
+        },
+        "compositions/scene3-the-encounter.html": {
+          "before": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/e0/e04b2f645fcca5107cc3d54c0352d440f2c44663618c146613bedba8583e4c9c",
+          "after": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/30/301c5e5673ceae747ea3156182df82daf60445fa8fad2821657c6c6e5f1de62d"
+        },
+        "compositions/scene4-the-first-stride.html": {
+          "before": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/32/325530d9830b971afe611218e0e30f16284179cdd8145258b7983d1f46ce67de",
+          "after": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/64/64ed2aa4111822ae707cfd32fac79a8c3ef905536b5d71cca2fda628fa42ad9a"
+        },
+        "compositions/scene5-the-horizon.html": {
+          "before": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/88/882c2d440f6194b8b5efdcb62a131e57a7ad26823b76990df3362efe2b14c6db",
+          "after": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/3d/3dd62f6d0710124da8e12d0c2ab0907ad37729698732681f9e7828075ba93529"
+        },
+        "index.html": {
+          "before": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/80/80aafdea3d5bfcaf3a398ecfa6bd96b17259f85fc7de73ac8a4bf298f9e0efcf",
+          "after": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/76/76d98982591ecb77eec731a115ef52c2d9edcb385227d8e36458c4e3c94a50e9"
+        }
+      }
+    },
+    "9cf1eb0f-6a8a-4d66-a4c3-8113e061ac5e": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1792248910080,
+      "endedAt": 1792248910089,
+      "files": {
+        "compositions/scene1-the-alarm.html": {
+          "before": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/25/2538ab0b213cf349046dd54681765b6eb301410e6a5ad2cf452de4f9d9b8263d",
+          "after": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/39/39d335c5669aec74271c180507e560705a2c3fe87893ea60e1d147d8881dc99f"
+        },
+        "compositions/scene2-the-mountain.html": {
+          "before": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/34/34cee562231d98f8869611a910f8e5489f00b09087c0c9baab98fc0334cbad14",
+          "after": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/c3/c3961860dfaf2fa3e69cc0dc151ea409ee621f3bd5124ea08aa67aefc45a14d4"
+        },
+        "compositions/scene3-the-encounter.html": {
+          "before": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/30/301c5e5673ceae747ea3156182df82daf60445fa8fad2821657c6c6e5f1de62d",
+          "after": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/b8/b82672d2e60f66a2b76425f6c8d89b1f91ab0498472e662b0b643195b5155f13"
+        },
+        "compositions/scene4-the-first-stride.html": {
+          "before": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/64/64ed2aa4111822ae707cfd32fac79a8c3ef905536b5d71cca2fda628fa42ad9a",
+          "after": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/22/22042aa6c07db861ef35713adf75d31158fc6a3fc371b723928dec20fa001121"
+        },
+        "compositions/scene5-the-horizon.html": {
+          "before": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/3d/3dd62f6d0710124da8e12d0c2ab0907ad37729698732681f9e7828075ba93529",
+          "after": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/6f/6f5fa1925bb7981c921f11455889366f2e6b895d29fe414c50ff4f2c08105eb0"
+        },
+        "index.html": {
+          "before": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/76/76d98982591ecb77eec731a115ef52c2d9edcb385227d8e36458c4e3c94a50e9",
+          "after": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/b0/b056887fd79cf9f258dd84649d9acdecf4a4554a9276cbc2397e865dc906f3c1"
+        }
+      }
+    },
+    "52615e13-ad63-4fa6-8c42-40b6a8f657be": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1792249168807,
+      "endedAt": 1792249168821,
+      "files": {
+        "snapshots/contact-sheet.jpg": {
+          "before": null,
+          "after": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/cc/cc06b692cf0252882d01c931299d3d99a0f4ef1462013fb4418d0dec5db0aab6"
+        },
+        "snapshots/descriptions.md": {
+          "before": null,
+          "after": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/cd/cd7b9f214f0c96c2e6abc3abc34960386e1e7de5fd50bd1e7f4027fd69fdcfb2"
+        },
+        "snapshots/frame-00-at-5s.png": {
+          "before": null,
+          "after": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/2a/2a2e467dc12f6b30630800c7783b82e5062be8d3802477e2ba7b100a21ac338a"
+        },
+        "snapshots/frame-01-at-65s.png": {
+          "before": null,
+          "after": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/2a/2a2e467dc12f6b30630800c7783b82e5062be8d3802477e2ba7b100a21ac338a"
+        },
+        "snapshots/frame-02-at-125s.png": {
+          "before": null,
+          "after": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/2a/2a2e467dc12f6b30630800c7783b82e5062be8d3802477e2ba7b100a21ac338a"
+        },
+        "snapshots/frame-03-at-185s.png": {
+          "before": null,
+          "after": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/2a/2a2e467dc12f6b30630800c7783b82e5062be8d3802477e2ba7b100a21ac338a"
+        },
+        "snapshots/frame-04-at-245s.png": {
+          "before": null,
+          "after": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/2a/2a2e467dc12f6b30630800c7783b82e5062be8d3802477e2ba7b100a21ac338a"
+        }
+      }
+    },
+    "77027adb-6269-46e8-96f2-9e5693036e1e": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1792249443750,
+      "endedAt": 1792249443758,
+      "files": {
+        "compositions/scene1-the-alarm.html": {
+          "before": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/39/39d335c5669aec74271c180507e560705a2c3fe87893ea60e1d147d8881dc99f",
+          "after": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/66/66524ae0c8b9038f80e18e3ddb18a1bc93a3a57348c67ac7a9a7a1eafccf511d"
+        },
+        "compositions/scene2-the-mountain.html": {
+          "before": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/c3/c3961860dfaf2fa3e69cc0dc151ea409ee621f3bd5124ea08aa67aefc45a14d4",
+          "after": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/25/25fae743980a9994ad3cbbe47bed78795b2b9231a8f0574fb52e7ce606fea435"
+        },
+        "compositions/scene3-the-encounter.html": {
+          "before": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/b8/b82672d2e60f66a2b76425f6c8d89b1f91ab0498472e662b0b643195b5155f13",
+          "after": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/fc/fcb45691e70ef5176b356822496d5affd194b3a1e6b627c4ef12adfec7d701f9"
+        },
+        "compositions/scene4-the-first-stride.html": {
+          "before": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/22/22042aa6c07db861ef35713adf75d31158fc6a3fc371b723928dec20fa001121",
+          "after": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/7a/7ad3fa7c6822f1f2cee9575f816badacdd8dc13dc89f60c287e2cfef3e03d8ea"
+        },
+        "compositions/scene5-the-horizon.html": {
+          "before": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/6f/6f5fa1925bb7981c921f11455889366f2e6b895d29fe414c50ff4f2c08105eb0",
+          "after": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/c0/c01ea447721b67f4d3cb9d8f879f53ad4f193fb3c55a837bb73f53871616a688"
+        },
+        "index.html": {
+          "before": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/b0/b056887fd79cf9f258dd84649d9acdecf4a4554a9276cbc2397e865dc906f3c1",
+          "after": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/e1/e17f6d9215900eadecf0559c3c441f8423f00cb755f76695693f905d2ade91d8"
+        }
+      }
+    },
+    "48154e5b-5cc9-4552-b341-cb477c035d8b": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1792249494693,
+      "endedAt": 1792249494695,
+      "files": {
+        "assets/css/cinematic-theme.css": {
+          "before": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/9c/9c3f5929aeeb4622138b12290c43798bcb9610fd18dc07087865588416d670a5",
+          "after": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/38/38563bc6e95bf3384be31f34e81d666f62594679ba8484a764b09f7725e3b745"
+        },
+        "compositions/scene5-the-horizon.html": {
+          "before": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/c0/c01ea447721b67f4d3cb9d8f879f53ad4f193fb3c55a837bb73f53871616a688",
+          "after": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/ef/efb080780d1f60a4feaba0f832edf0b62d384bd8008421ac07e9291214664a01"
+        }
+      }
+    },
+    "2ffae408-9367-4d88-8418-e1faaff8ec9a": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1792249638321,
+      "endedAt": 1792249638327,
+      "files": {
+        "compositions/scene1-the-alarm.html": {
+          "before": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/66/66524ae0c8b9038f80e18e3ddb18a1bc93a3a57348c67ac7a9a7a1eafccf511d",
+          "after": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/f2/f2f3873490dad6668ec3e24d7079870c5d6377173dcc943ecd405a765e8924a6"
+        },
+        "compositions/scene2-the-mountain.html": {
+          "before": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/25/25fae743980a9994ad3cbbe47bed78795b2b9231a8f0574fb52e7ce606fea435",
+          "after": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/1c/1c05b84e9a271324c5362d731a6f73e6cee3d5cc7078ef573123f076a64ec25b"
+        },
+        "compositions/scene3-the-encounter.html": {
+          "before": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/fc/fcb45691e70ef5176b356822496d5affd194b3a1e6b627c4ef12adfec7d701f9",
+          "after": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/6b/6b28c8026663c1309a23e24ad12a2f066846a7f2919f6d0acb3dfc0b56931828"
+        },
+        "compositions/scene4-the-first-stride.html": {
+          "before": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/7a/7ad3fa7c6822f1f2cee9575f816badacdd8dc13dc89f60c287e2cfef3e03d8ea",
+          "after": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/90/9049e2086a01b8c1e8f018845beb3e1d52d14f58289526d86b1838322e849851"
+        },
+        "compositions/scene5-the-horizon.html": {
+          "before": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/ef/efb080780d1f60a4feaba0f832edf0b62d384bd8008421ac07e9291214664a01",
+          "after": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/e1/e14d4b45fcfa5bdfd4f6287a00a8d94f2a6a1aed060c3444dc1ef8e7f0b20db3"
+        }
+      }
+    },
+    "d30d6611-ebf3-476b-88a9-f0c601d4a6c5": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1792249732065,
+      "endedAt": 1792249732068,
+      "files": {
+        "assets/css/cinematic-theme.css": {
+          "before": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/38/38563bc6e95bf3384be31f34e81d666f62594679ba8484a764b09f7725e3b745",
+          "after": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/3d/3de230b37df0f295730fe73e0aa2a3a81001c93738d025873c276cc63865095d"
+        },
+        "compositions/scene1-the-alarm.html": {
+          "before": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/f2/f2f3873490dad6668ec3e24d7079870c5d6377173dcc943ecd405a765e8924a6",
+          "after": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/85/85b067973c9c63e341e8e1cb484d575a6f6262427a2968a730ec78e0000d5439"
+        },
+        "compositions/scene2-the-mountain.html": {
+          "before": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/1c/1c05b84e9a271324c5362d731a6f73e6cee3d5cc7078ef573123f076a64ec25b",
+          "after": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/89/89b71668b478ac22a00e7438fdebe9724db7f086369f9805a8e57ab3dafb34e5"
+        }
+      }
+    },
+    "e6d2dee7-7857-4956-b156-c37f056466ee": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1792249998458,
+      "endedAt": 1792249998465,
+      "files": {
+        "assets/css/cinematic-theme.css": {
+          "before": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/3d/3de230b37df0f295730fe73e0aa2a3a81001c93738d025873c276cc63865095d",
+          "after": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/43/4306a162d3e1520ce44d83ff892b65a2698d8c4d81b7a808405bcdaec7d6821b"
+        },
+        "compositions/scene1-the-alarm.html": {
+          "before": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/85/85b067973c9c63e341e8e1cb484d575a6f6262427a2968a730ec78e0000d5439",
+          "after": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/36/36228b922a6e76192616fe368d91566e7785c1ed596eeaeb157f1b8f1689c5fc"
+        },
+        "compositions/scene2-the-mountain.html": {
+          "before": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/89/89b71668b478ac22a00e7438fdebe9724db7f086369f9805a8e57ab3dafb34e5",
+          "after": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/d5/d5b8e986c9ce68d65f2584856350d66b36194c8392ce23acb83681cf4f24324c"
+        },
+        "compositions/scene3-the-encounter.html": {
+          "before": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/6b/6b28c8026663c1309a23e24ad12a2f066846a7f2919f6d0acb3dfc0b56931828",
+          "after": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/1c/1cd901fe4d5e433d599fb743de5a5ebe91f3831bbe81b8613f096c58a3bbe3a5"
+        },
+        "compositions/scene4-the-first-stride.html": {
+          "before": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/90/9049e2086a01b8c1e8f018845beb3e1d52d14f58289526d86b1838322e849851",
+          "after": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/22/22b3e65e87cd4cdfacbcb499ec23b4b331979fe2d84befa037fbf83ebd5edfeb"
+        },
+        "compositions/scene5-the-horizon.html": {
+          "before": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/e1/e14d4b45fcfa5bdfd4f6287a00a8d94f2a6a1aed060c3444dc1ef8e7f0b20db3",
+          "after": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/97/97577079c4f85ed9956643a503a2c97fc0ce8e4d8edf6d517c3f4d13a4d0155d"
+        }
+      }
+    },
+    "931f6e94-171a-4034-ac6d-e0b232c6ca1f": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1792250067605,
+      "endedAt": 1792250067611,
+      "files": {
+        "compositions/scene1-the-alarm.html": {
+          "before": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/36/36228b922a6e76192616fe368d91566e7785c1ed596eeaeb157f1b8f1689c5fc",
+          "after": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/14/1498d6f17b9fe8d2af6785cd52d4c1e182b469a79711aa48e6c779e7fccb29ca"
+        },
+        "compositions/scene2-the-mountain.html": {
+          "before": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/d5/d5b8e986c9ce68d65f2584856350d66b36194c8392ce23acb83681cf4f24324c",
+          "after": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/3a/3a5b240c343bd5aa8b0b2d470fdc55f28fce51de400ccc261c939d360768fffe"
+        },
+        "compositions/scene3-the-encounter.html": {
+          "before": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/1c/1cd901fe4d5e433d599fb743de5a5ebe91f3831bbe81b8613f096c58a3bbe3a5",
+          "after": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/5a/5aaa7257a6e7346605247d49a600638dec164e8def8117fd568ba879d04b17b1"
+        },
+        "compositions/scene4-the-first-stride.html": {
+          "before": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/22/22b3e65e87cd4cdfacbcb499ec23b4b331979fe2d84befa037fbf83ebd5edfeb",
+          "after": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/bd/bd25137f37f4d4d61a497e94b35014a32c616f38aa97fe271c163721f313e96a"
+        },
+        "compositions/scene5-the-horizon.html": {
+          "before": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/97/97577079c4f85ed9956643a503a2c97fc0ce8e4d8edf6d517c3f4d13a4d0155d",
+          "after": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/af/afcc38296bccab0612178599eeefd6f8a269e380b1f7c6d8a943159c1d2c30ca"
+        }
+      }
+    },
+    "70b48978-2841-4191-9fa9-58f6b13c527e": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1792250149055,
+      "endedAt": 1792250149077,
+      "files": {
+        "snapshots/contact-sheet.jpg": {
+          "before": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/cc/cc06b692cf0252882d01c931299d3d99a0f4ef1462013fb4418d0dec5db0aab6",
+          "after": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/f4/f4ce27f808e3ba2f5e28b708ae7fd87fcd8dc7dfd10090c51859504cb4903877"
+        },
+        "snapshots/descriptions.md": {
+          "before": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/cd/cd7b9f214f0c96c2e6abc3abc34960386e1e7de5fd50bd1e7f4027fd69fdcfb2",
+          "after": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/bb/bba6900797d8957b9eb88ed338bb915a25e6b52ff05a268baf9708f4e5cc6964"
+        },
+        "snapshots/frame-00-at-3.5s.png": {
+          "before": null,
+          "after": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/90/90f4caf1d8f8fd95c9fdb92ab0cdf9fe5b1572401e5b9edda673849f96a25dc7"
+        },
+        "snapshots/frame-00-at-5s.png": {
+          "before": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/2a/2a2e467dc12f6b30630800c7783b82e5062be8d3802477e2ba7b100a21ac338a",
+          "after": null
+        },
+        "snapshots/frame-01-at-65s.png": {
+          "before": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/2a/2a2e467dc12f6b30630800c7783b82e5062be8d3802477e2ba7b100a21ac338a",
+          "after": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/dd/ddd709a8ec25b29878ff5a69348a9507843d66afb987fb98cebf196457a38ca8"
+        },
+        "snapshots/frame-02-at-125s.png": {
+          "before": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/2a/2a2e467dc12f6b30630800c7783b82e5062be8d3802477e2ba7b100a21ac338a",
+          "after": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/26/2605cb77feed104298b54dc445e5d5251598173784bf5de3f2f4b676ffb0e6eb"
+        },
+        "snapshots/frame-03-at-185s.png": {
+          "before": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/2a/2a2e467dc12f6b30630800c7783b82e5062be8d3802477e2ba7b100a21ac338a",
+          "after": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/86/860ba855980bcb3080d3df5df3534fcbaa0d66750f6f728abbcfd58aaaaef4b6"
+        },
+        "snapshots/frame-04-at-245s.png": {
+          "before": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/2a/2a2e467dc12f6b30630800c7783b82e5062be8d3802477e2ba7b100a21ac338a",
+          "after": null
+        },
+        "snapshots/frame-04-at-270s.png": {
+          "before": null,
+          "after": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/94/94913a0dae0f0f7e0601508890808aa78300e9f4b0a75fa0b76a309fba7363d7"
+        },
+        "snapshots/frame-05-at-291s.png": {
+          "before": null,
+          "after": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/94/94913a0dae0f0f7e0601508890808aa78300e9f4b0a75fa0b76a309fba7363d7"
+        }
+      }
+    },
+    "536bfe31-f29f-4b46-bd20-c49cca330aa3": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1792250185080,
+      "endedAt": 1792250185087,
+      "files": {
+        "compositions/scene2-the-mountain.html": {
+          "before": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/3a/3a5b240c343bd5aa8b0b2d470fdc55f28fce51de400ccc261c939d360768fffe",
+          "after": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/be/be1e537fb6213df98f22d4127f430e5cde6fe64a590fcada3303742f9d943f62"
+        },
+        "snapshots/contact-sheet.jpg": {
+          "before": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/f4/f4ce27f808e3ba2f5e28b708ae7fd87fcd8dc7dfd10090c51859504cb4903877",
+          "after": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/c5/c5acdbc6fc62e15cf85c79b65b763626c56b6b3a2ca7658b1357b2739b329d5a"
+        },
+        "snapshots/descriptions.md": {
+          "before": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/bb/bba6900797d8957b9eb88ed338bb915a25e6b52ff05a268baf9708f4e5cc6964",
+          "after": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/ea/ea3a1e200b4102fca9642f1c462e98067219d5358e1c2297ff99d240c68044fc"
+        },
+        "snapshots/frame-00-at-248s.png": {
+          "before": null,
+          "after": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/79/79117f8c01fca3a794aef7f7d315f918ed49ef56e8edb5f1a7b29bb3ffc2a2ad"
+        },
+        "snapshots/frame-00-at-3.5s.png": {
+          "before": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/90/90f4caf1d8f8fd95c9fdb92ab0cdf9fe5b1572401e5b9edda673849f96a25dc7",
+          "after": null
+        },
+        "snapshots/frame-01-at-291s.png": {
+          "before": null,
+          "after": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/22/22153a0aa41391706344e43ba26ed01165c0c86aad49d16739892d8ca6f7b357"
+        },
+        "snapshots/frame-01-at-65s.png": {
+          "before": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/dd/ddd709a8ec25b29878ff5a69348a9507843d66afb987fb98cebf196457a38ca8",
+          "after": null
+        },
+        "snapshots/frame-02-at-125s.png": {
+          "before": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/26/2605cb77feed104298b54dc445e5d5251598173784bf5de3f2f4b676ffb0e6eb",
+          "after": null
+        },
+        "snapshots/frame-03-at-185s.png": {
+          "before": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/86/860ba855980bcb3080d3df5df3534fcbaa0d66750f6f728abbcfd58aaaaef4b6",
+          "after": null
+        },
+        "snapshots/frame-04-at-270s.png": {
+          "before": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/94/94913a0dae0f0f7e0601508890808aa78300e9f4b0a75fa0b76a309fba7363d7",
+          "after": null
+        },
+        "snapshots/frame-05-at-291s.png": {
+          "before": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/94/94913a0dae0f0f7e0601508890808aa78300e9f4b0a75fa0b76a309fba7363d7",
+          "after": null
+        }
+      }
+    },
+    "73ab237f-91c8-4e7f-b048-1cafb1202f44": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1792250202887,
+      "endedAt": 1792250202894,
+      "files": {
+        "snapshots/contact-sheet.jpg": {
+          "before": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/c5/c5acdbc6fc62e15cf85c79b65b763626c56b6b3a2ca7658b1357b2739b329d5a",
+          "after": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/59/59c78534687e7e78a7f156841aff650eb609bd266b413da72e7bd1433deda963"
+        },
+        "snapshots/frame-00-at-248s.png": {
+          "before": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/79/79117f8c01fca3a794aef7f7d315f918ed49ef56e8edb5f1a7b29bb3ffc2a2ad",
+          "after": null
+        },
+        "snapshots/frame-00-at-65s.png": {
+          "before": null,
+          "after": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/a1/a145035390d5a776f804e1cd7a4cf77a07d784955e1c528e110d199826e8e309"
+        },
+        "snapshots/frame-01-at-291s.png": {
+          "before": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/22/22153a0aa41391706344e43ba26ed01165c0c86aad49d16739892d8ca6f7b357",
+          "after": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/94/94913a0dae0f0f7e0601508890808aa78300e9f4b0a75fa0b76a309fba7363d7"
+        }
+      }
+    },
+    "5538e985-ecb7-4749-a8a5-265f4cc96496": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1792251736019,
+      "endedAt": 1792251736051,
+      "files": {
+        "compositions/scene1-the-alarm.html": {
+          "before": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/14/1498d6f17b9fe8d2af6785cd52d4c1e182b469a79711aa48e6c779e7fccb29ca",
+          "after": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/fd/fdbfddad6d3ded98961e6559b091e78b47731fe07749485352467dfdf7e6a9a3"
+        },
+        "compositions/scene2-the-mountain.html": {
+          "before": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/be/be1e537fb6213df98f22d4127f430e5cde6fe64a590fcada3303742f9d943f62",
+          "after": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/10/10609d543b30c3ba501a60aaa0059961559c11f0e93cf73a1e05c3c9ec0917c6"
+        },
+        "compositions/scene3-the-encounter.html": {
+          "before": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/5a/5aaa7257a6e7346605247d49a600638dec164e8def8117fd568ba879d04b17b1",
+          "after": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/ec/ecd75b6c983dfb3b5c77cba6ebf2b6bc62a1a62c3814f172c3833f47e690865d"
+        },
+        "compositions/scene4-the-first-stride.html": {
+          "before": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/bd/bd25137f37f4d4d61a497e94b35014a32c616f38aa97fe271c163721f313e96a",
+          "after": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/6a/6a6e30d49a58e3824f4f9a794b28f4e32fa431e65743ce1cfe14041e109da2fc"
+        },
+        "compositions/scene5-the-horizon.html": {
+          "before": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/af/afcc38296bccab0612178599eeefd6f8a269e380b1f7c6d8a943159c1d2c30ca",
+          "after": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/0f/0f9317d0127e59eae168c8a2de1abb3b2fb74e09b62344857368d14e5477ab2a"
+        },
+        "index.html": {
+          "before": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/e1/e17f6d9215900eadecf0559c3c441f8423f00cb755f76695693f905d2ade91d8",
+          "after": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/50/504f764750d8dd58e2d0e50ae5baf0c97223bc7247e93a40b4bc380bccb1fa8f"
+        },
+        "snapshots/contact-sheet.jpg": {
+          "before": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/59/59c78534687e7e78a7f156841aff650eb609bd266b413da72e7bd1433deda963",
+          "after": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/36/3683512d431bd1f2b110dee8ec5d398f16dfa226e9c021c6bcd9545ae0bc7575"
+        },
+        "snapshots/descriptions.md": {
+          "before": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/ea/ea3a1e200b4102fca9642f1c462e98067219d5358e1c2297ff99d240c68044fc",
+          "after": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/bb/bba6900797d8957b9eb88ed338bb915a25e6b52ff05a268baf9708f4e5cc6964"
+        },
+        "snapshots/frame-00-at-3.5s.png": {
+          "before": null,
+          "after": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/90/90f4caf1d8f8fd95c9fdb92ab0cdf9fe5b1572401e5b9edda673849f96a25dc7"
+        },
+        "snapshots/frame-00-at-65s.png": {
+          "before": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/a1/a145035390d5a776f804e1cd7a4cf77a07d784955e1c528e110d199826e8e309",
+          "after": null
+        },
+        "snapshots/frame-01-at-291s.png": {
+          "before": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/94/94913a0dae0f0f7e0601508890808aa78300e9f4b0a75fa0b76a309fba7363d7",
+          "after": null
+        },
+        "snapshots/frame-01-at-65s.png": {
+          "before": null,
+          "after": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/a1/a145035390d5a776f804e1cd7a4cf77a07d784955e1c528e110d199826e8e309"
+        },
+        "snapshots/frame-02-at-125s.png": {
+          "before": null,
+          "after": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/26/2605cb77feed104298b54dc445e5d5251598173784bf5de3f2f4b676ffb0e6eb"
+        },
+        "snapshots/frame-03-at-185s.png": {
+          "before": null,
+          "after": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/86/860ba855980bcb3080d3df5df3534fcbaa0d66750f6f728abbcfd58aaaaef4b6"
+        },
+        "snapshots/frame-04-at-270s.png": {
+          "before": null,
+          "after": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/94/94913a0dae0f0f7e0601508890808aa78300e9f4b0a75fa0b76a309fba7363d7"
+        },
+        "snapshots/frame-05-at-291s.png": {
+          "before": null,
+          "after": "/Users/shaswatraj/.cache/hyperframes/history/9827c4f3-d4de-44fa-92ad-bea8c42cecf0/blobs/94/94913a0dae0f0f7e0601508890808aa78300e9f4b0a75fa0b76a309fba7363d7"
+        }
+      }
+    }
+  },
+  "checks": {
+    "latest": {
+      "revision": "931f6e94-171a-4034-ac6d-e0b232c6ca1f",
+      "id": "f21b1c12-14a9-40e6-a58e-a55deacb76a8"
+    },
+    "revisions": {
+      "571eed41-d47a-4cd7-83f4-e2ae25aa4563": [
+        {
+          "id": "6c8f25d7-099b-4c61-b3cc-c3c8bf2bfb8a",
+          "scope": "project",
+          "report": "/Users/shaswatraj/Desktop/youtube/animations/the-five-minute-rule/.hyperframes/artifacts/checks/6c8f25d7-099b-4c61-b3cc-c3c8bf2bfb8a.json",
+          "metadata": {
+            "ok": false,
+            "browserSkipped": true,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 3000,
+              "contrast": true,
+              "strict": false,
+              "snapshots": false,
+              "browserGpuMode": "auto"
+            }
+          },
+          "createdAt": 1792248605181,
+          "contentHash": "a7236e448b5677979b22639f4cc6792108f411fa1f4024246e5eca1b260873ec",
+          "revision": "571eed41-d47a-4cd7-83f4-e2ae25aa4563",
+          "inputFingerprint": "3fbb17d7aab03f0439d5110ffafa67ca6e33b57197acb3bdf371c794e484cb6a",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
+      ],
+      "a56132ea-6fb3-4a05-bf54-aac60e7defc6": [
+        {
+          "id": "f81f5609-dbdc-47c4-a784-0ad513f6f9e0",
+          "scope": "project",
+          "report": "/Users/shaswatraj/Desktop/youtube/animations/the-five-minute-rule/.hyperframes/artifacts/checks/f81f5609-dbdc-47c4-a784-0ad513f6f9e0.json",
+          "metadata": {
+            "ok": false,
+            "browserSkipped": true,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 3000,
+              "contrast": true,
+              "strict": false,
+              "snapshots": false,
+              "browserGpuMode": "auto"
+            }
+          },
+          "createdAt": 1792248833335,
+          "contentHash": "7c4aab232db326e18a50470cf734c785828a3965d7acb334121f7423cf51f60b",
+          "revision": "a56132ea-6fb3-4a05-bf54-aac60e7defc6",
+          "inputFingerprint": "76faeb8d6f08029d36519c43b20627d51525e9fe1c199bbc2dfd064315753e1b",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
+      ],
+      "9cf1eb0f-6a8a-4d66-a4c3-8113e061ac5e": [
+        {
+          "id": "267a9fee-fc0b-42db-88d6-dc03f12282ce",
+          "scope": "project",
+          "report": "/Users/shaswatraj/Desktop/youtube/animations/the-five-minute-rule/.hyperframes/artifacts/checks/267a9fee-fc0b-42db-88d6-dc03f12282ce.json",
+          "metadata": {
+            "ok": false,
+            "browserSkipped": false,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 3000,
+              "contrast": true,
+              "strict": false,
+              "snapshots": false,
+              "browserGpuMode": "auto"
+            }
+          },
+          "createdAt": 1792248920049,
+          "contentHash": "f6edc6ffac482af7852bfc23549b0b9cb46cf901339cdc1c55e1e9ac3f30fce4",
+          "revision": "9cf1eb0f-6a8a-4d66-a4c3-8113e061ac5e",
+          "inputFingerprint": "d5333c76fef9f25847a2d4ec67a29d312c547207506cc3bb41f09ac6ee674941",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
+      ],
+      "77027adb-6269-46e8-96f2-9e5693036e1e": [
+        {
+          "id": "8f1d24b1-2d62-4952-bda5-fbbcf396b19d",
+          "scope": "project",
+          "report": "/Users/shaswatraj/Desktop/youtube/animations/the-five-minute-rule/.hyperframes/artifacts/checks/8f1d24b1-2d62-4952-bda5-fbbcf396b19d.json",
+          "metadata": {
+            "ok": false,
+            "browserSkipped": true,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 3000,
+              "contrast": true,
+              "strict": false,
+              "snapshots": false,
+              "browserGpuMode": "auto"
+            }
+          },
+          "createdAt": 1792249444254,
+          "contentHash": "4ed35377209ec40424e7cf2e8f9e64501a4c4e8463173c4997508a89abbcbb63",
+          "revision": "77027adb-6269-46e8-96f2-9e5693036e1e",
+          "inputFingerprint": "c84d94c2d6296d988f1fdfe62e1380ca7cec039ede9bb1b410db052bf7665e02",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
+      ],
+      "48154e5b-5cc9-4552-b341-cb477c035d8b": [
+        {
+          "id": "68530891-afd7-4491-a7fa-b49027373494",
+          "scope": "project",
+          "report": "/Users/shaswatraj/Desktop/youtube/animations/the-five-minute-rule/.hyperframes/artifacts/checks/68530891-afd7-4491-a7fa-b49027373494.json",
+          "metadata": {
+            "ok": false,
+            "browserSkipped": false,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 3000,
+              "contrast": true,
+              "strict": false,
+              "snapshots": false,
+              "browserGpuMode": "auto"
+            }
+          },
+          "createdAt": 1792249507696,
+          "contentHash": "c69dc441f292143aed0795fa6ec28bc4c778fc748ecf94d1f97dc6d89cea9fe8",
+          "revision": "48154e5b-5cc9-4552-b341-cb477c035d8b",
+          "inputFingerprint": "17ea80eff399534e72da3fafd1e66069aea5a4032f3f5814b66bd60072745086",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
+      ],
+      "2ffae408-9367-4d88-8418-e1faaff8ec9a": [
+        {
+          "id": "dfed530c-b88c-4e99-847f-351824932b05",
+          "scope": "project",
+          "report": "/Users/shaswatraj/Desktop/youtube/animations/the-five-minute-rule/.hyperframes/artifacts/checks/dfed530c-b88c-4e99-847f-351824932b05.json",
+          "metadata": {
+            "ok": false,
+            "browserSkipped": false,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 3000,
+              "contrast": true,
+              "strict": false,
+              "snapshots": false,
+              "browserGpuMode": "auto"
+            }
+          },
+          "createdAt": 1792249649130,
+          "contentHash": "0b15ca7898c4955cf0da362c18148c56f8ad8dea50a77fdf34651664de9027e1",
+          "revision": "2ffae408-9367-4d88-8418-e1faaff8ec9a",
+          "inputFingerprint": "a8077b1d00a9aa8e1346b82dbd91d80f773e8ec433a8b770c0d680dac10cd90a",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
+      ],
+      "d30d6611-ebf3-476b-88a9-f0c601d4a6c5": [
+        {
+          "id": "ded062d7-93fb-4273-833e-f6384dbae117",
+          "scope": "project",
+          "report": "/Users/shaswatraj/Desktop/youtube/animations/the-five-minute-rule/.hyperframes/artifacts/checks/ded062d7-93fb-4273-833e-f6384dbae117.json",
+          "metadata": {
+            "ok": false,
+            "browserSkipped": false,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 3000,
+              "contrast": true,
+              "strict": false,
+              "snapshots": false,
+              "browserGpuMode": "auto"
+            }
+          },
+          "createdAt": 1792249743875,
+          "contentHash": "c2c729635444b042ed98aa7d035aa764b41a11506377d930db24025c2632eaca",
+          "revision": "d30d6611-ebf3-476b-88a9-f0c601d4a6c5",
+          "inputFingerprint": "3a09c55139b79c89a60b84243af8c794d22ffec71ae9aa17d4c9422572c7bb04",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "id": "aa9bb697-512a-423d-bde5-eae5b68f5487",
+          "scope": "project",
+          "report": "/Users/shaswatraj/Desktop/youtube/animations/the-five-minute-rule/.hyperframes/artifacts/checks/aa9bb697-512a-423d-bde5-eae5b68f5487.json",
+          "metadata": {
+            "ok": false,
+            "browserSkipped": false,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 3000,
+              "contrast": true,
+              "strict": false,
+              "snapshots": false,
+              "browserGpuMode": "auto"
+            }
+          },
+          "createdAt": 1792249805913,
+          "contentHash": "c2c729635444b042ed98aa7d035aa764b41a11506377d930db24025c2632eaca",
+          "revision": "d30d6611-ebf3-476b-88a9-f0c601d4a6c5",
+          "inputFingerprint": "3a09c55139b79c89a60b84243af8c794d22ffec71ae9aa17d4c9422572c7bb04",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
+      ],
+      "e6d2dee7-7857-4956-b156-c37f056466ee": [
+        {
+          "id": "ea044147-740a-4a1a-8c17-17f86f41ad93",
+          "scope": "project",
+          "report": "/Users/shaswatraj/Desktop/youtube/animations/the-five-minute-rule/.hyperframes/artifacts/checks/ea044147-740a-4a1a-8c17-17f86f41ad93.json",
+          "metadata": {
+            "ok": true,
+            "browserSkipped": false,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 3000,
+              "contrast": true,
+              "strict": false,
+              "snapshots": false,
+              "browserGpuMode": "auto"
+            }
+          },
+          "createdAt": 1792250010374,
+          "contentHash": "f47b3e79208ca54b918fecb1f0044832192d5e3b9a97c65f1d901f6988acae95",
+          "revision": "e6d2dee7-7857-4956-b156-c37f056466ee",
+          "inputFingerprint": "e89d2e77bcef8cf848c525a0293722a8e41316ac977a1068b999e36c25a0522a",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
+      ],
+      "931f6e94-171a-4034-ac6d-e0b232c6ca1f": [
+        {
+          "id": "f21b1c12-14a9-40e6-a58e-a55deacb76a8",
+          "scope": "project",
+          "report": "/Users/shaswatraj/Desktop/youtube/animations/the-five-minute-rule/.hyperframes/artifacts/checks/f21b1c12-14a9-40e6-a58e-a55deacb76a8.json",
+          "metadata": {
+            "ok": true,
+            "browserSkipped": false,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 3000,
+              "contrast": true,
+              "strict": false,
+              "snapshots": false,
+              "browserGpuMode": "auto"
+            }
+          },
+          "createdAt": 1792250079399,
+          "contentHash": "519f550ae642c0a966267c9053204ee3b2547cb94977208d7d9f18a91f802ce5",
+          "revision": "931f6e94-171a-4034-ac6d-e0b232c6ca1f",
+          "inputFingerprint": "d1cf4b8049877bd14fda66038aa8215217153c30cc9362afb049184df0e49a1e",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
+      ]
+    },
+    "unversioned": [
+      {
+        "id": "31c133f7-c739-43c5-adb4-05f4b1157b07",
+        "scope": "project",
+        "report": "/Users/shaswatraj/Desktop/youtube/animations/the-five-minute-rule/.hyperframes/artifacts/checks/31c133f7-c739-43c5-adb4-05f4b1157b07.json",
+        "metadata": {
+          "ok": true,
+          "browserSkipped": false,
+          "options": {
+            "samples": 9,
+            "atTransitions": false,
+            "maxIssues": 80,
+            "collapseStatic": true,
+            "tolerance": 2,
+            "timeout": 3000,
+            "contrast": true,
+            "strict": false,
+            "snapshots": false,
+            "browserGpuMode": "auto"
+          }
+        },
+        "createdAt": 1792248177380,
+        "contentHash": "a451d9efe4356c73baf24f47d7168e3a070beb2dcbc2d4fa9ddb85a7ddf5207e",
+        "revision": null,
+        "inputFingerprint": "5dab41d30ebf9e446108da6cb92edb99bb7d67e1a364203b9f85171572ddbeb2",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      }
+    ]
+  },
+  "snapshots": {
+    "latest": {
+      "revision": null,
+      "id": "9f0c5892-943f-460b-9753-27a8fd6abc88-5"
+    },
+    "revisions": {},
+    "unversioned": [
+      {
+        "scope": "full",
+        "id": "9f0c5892-943f-460b-9753-27a8fd6abc88-0",
+        "image": "/Users/shaswatraj/Desktop/youtube/animations/the-five-minute-rule/snapshots/frame-00-at-3.5s.png",
+        "time": 3.5,
+        "metadata": {
+          "width": 1920,
+          "height": 1080,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1792250209604,
+        "contentHash": "90f4caf1d8f8fd95c9fdb92ab0cdf9fe5b1572401e5b9edda673849f96a25dc7",
+        "revision": null,
+        "inputFingerprint": "b17dde0c1eaf6584ec784e4eb9400ed1c5107f05fadadfa704b9c57db14a3b34",
+        "inputScope": "local-project-files",
+        "attribution": "inputs-changed"
+      },
+      {
+        "scope": "full",
+        "id": "9f0c5892-943f-460b-9753-27a8fd6abc88-1",
+        "image": "/Users/shaswatraj/Desktop/youtube/animations/the-five-minute-rule/snapshots/frame-01-at-65s.png",
+        "time": 65,
+        "metadata": {
+          "width": 1920,
+          "height": 1080,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1792250209605,
+        "contentHash": "a145035390d5a776f804e1cd7a4cf77a07d784955e1c528e110d199826e8e309",
+        "revision": null,
+        "inputFingerprint": "b17dde0c1eaf6584ec784e4eb9400ed1c5107f05fadadfa704b9c57db14a3b34",
+        "inputScope": "local-project-files",
+        "attribution": "inputs-changed"
+      },
+      {
+        "scope": "full",
+        "id": "9f0c5892-943f-460b-9753-27a8fd6abc88-2",
+        "image": "/Users/shaswatraj/Desktop/youtube/animations/the-five-minute-rule/snapshots/frame-02-at-125s.png",
+        "time": 125,
+        "metadata": {
+          "width": 1920,
+          "height": 1080,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1792250209605,
+        "contentHash": "2605cb77feed104298b54dc445e5d5251598173784bf5de3f2f4b676ffb0e6eb",
+        "revision": null,
+        "inputFingerprint": "b17dde0c1eaf6584ec784e4eb9400ed1c5107f05fadadfa704b9c57db14a3b34",
+        "inputScope": "local-project-files",
+        "attribution": "inputs-changed"
+      },
+      {
+        "scope": "full",
+        "id": "9f0c5892-943f-460b-9753-27a8fd6abc88-3",
+        "image": "/Users/shaswatraj/Desktop/youtube/animations/the-five-minute-rule/snapshots/frame-03-at-185s.png",
+        "time": 185,
+        "metadata": {
+          "width": 1920,
+          "height": 1080,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1792250209605,
+        "contentHash": "860ba855980bcb3080d3df5df3534fcbaa0d66750f6f728abbcfd58aaaaef4b6",
+        "revision": null,
+        "inputFingerprint": "b17dde0c1eaf6584ec784e4eb9400ed1c5107f05fadadfa704b9c57db14a3b34",
+        "inputScope": "local-project-files",
+        "attribution": "inputs-changed"
+      },
+      {
+        "scope": "full",
+        "id": "9f0c5892-943f-460b-9753-27a8fd6abc88-4",
+        "image": "/Users/shaswatraj/Desktop/youtube/animations/the-five-minute-rule/snapshots/frame-04-at-270s.png",
+        "time": 270,
+        "metadata": {
+          "width": 1920,
+          "height": 1080,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1792250209605,
+        "contentHash": "94913a0dae0f0f7e0601508890808aa78300e9f4b0a75fa0b76a309fba7363d7",
+        "revision": null,
+        "inputFingerprint": "b17dde0c1eaf6584ec784e4eb9400ed1c5107f05fadadfa704b9c57db14a3b34",
+        "inputScope": "local-project-files",
+        "attribution": "inputs-changed"
+      },
+      {
+        "scope": "full",
+        "id": "9f0c5892-943f-460b-9753-27a8fd6abc88-5",
+        "image": "/Users/shaswatraj/Desktop/youtube/animations/the-five-minute-rule/snapshots/frame-05-at-291s.png",
+        "time": 291,
+        "metadata": {
+          "width": 1920,
+          "height": 1080,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1792250209605,
+        "contentHash": "94913a0dae0f0f7e0601508890808aa78300e9f4b0a75fa0b76a309fba7363d7",
+        "revision": null,
+        "inputFingerprint": "b17dde0c1eaf6584ec784e4eb9400ed1c5107f05fadadfa704b9c57db14a3b34",
+        "inputScope": "local-project-files",
+        "attribution": "inputs-changed"
+      }
+    ]
+  }
+}

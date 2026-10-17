@@ -1,0 +1,257 @@
+<template id="scene4-template">
+  <div data-hf-id="hf-63ia"
+    id="scene4-root"
+    data-composition-id="scene4"
+    data-width="1920"
+    data-height="1080"
+    data-duration="60"
+    style="position: relative; width: 1920px; height: 1080px; overflow: hidden; background: #101726;"
+  >
+    <style>
+      [data-composition-id="scene4"] .sky-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 1920px;
+        height: 600px;
+        background: linear-gradient(180deg, #101726 0%, #1e283d 60%, #444c5d 100%);
+      }
+
+      [data-composition-id="scene4"] .distant-hills {
+        position: absolute;
+        top: 420px;
+        left: 0;
+        width: 1920px;
+        height: 180px;
+      }
+
+      [data-composition-id="scene4"] .ground-field {
+        position: absolute;
+        top: 480px;
+        left: 0;
+        width: 1920px;
+        height: 600px;
+        background: #5a5444;
+      }
+
+      [data-composition-id="scene4"] .road-svg {
+        position: absolute;
+        top: 470px;
+        left: 0;
+        width: 1920px;
+        height: 610px;
+      }
+
+      [data-composition-id="scene4"] .lamp-glow {
+        position: absolute;
+        border-radius: 50%;
+        background: radial-gradient(circle, rgba(255, 230, 160, 0.45) 0%, rgba(255, 220, 140, 0.15) 50%, transparent 80%);
+        pointer-events: none;
+      }
+
+      [data-composition-id="scene4"] .walker-rig {
+        position: absolute;
+        top: 490px;
+        left: 640px;
+        width: 160px;
+        height: 320px;
+        z-index: 60;
+      }
+
+      [data-composition-id="scene4"] .walker-shadow {
+        position: absolute;
+        top: 790px;
+        left: 610px;
+        width: 220px;
+        height: 28px;
+        border-radius: 50%;
+        background: rgba(0, 0, 0, 0.4);
+        transform: rotate(-12deg);
+        filter: blur(4px);
+        z-index: 55;
+      }
+
+      [data-composition-id="scene4"] .thought-scene4 {
+        top: 360px;
+        left: 480px;
+        opacity: 0;
+      }
+    </style>
+
+    <!-- Audio Element -->
+    <audio data-hf-id="hf-2tgc" id="vo-scene4" src="../assets/audio/voiceovers/scene4.mp3" data-start="2" data-duration="13.53" data-hf-media-start-basis="local" preload="auto"></audio>
+
+    <!-- Sky Background -->
+    <div data-hf-id="hf-ltag" id="bg-sky-s4" class="sky-bg clip" data-start="0" data-duration="60"></div>
+
+    <!-- Distant Mountains -->
+    <svg data-hf-id="hf-nwst" id="hills-s4" class="distant-hills clip" data-start="0" data-duration="60" viewBox="0 0 1920 180" preserveAspectRatio="none">
+      <path data-hf-id="hf-b2el" d="M 0 180 L 0 110 Q 320 80, 600 120 Q 960 90, 1280 130 Q 1600 70, 1920 100 L 1920 180 Z" fill="#2d3748"/>
+    </svg>
+
+    <!-- Ground Field -->
+    <div data-hf-id="hf-nlpn" id="ground-s4" class="ground-field clip" data-start="0" data-duration="60"></div>
+
+    <!-- Curving Road SVG (Homage to screenshot 2) -->
+    <svg data-hf-id="hf-sial" id="road-s4" class="road-svg clip" data-layout-allow-overflow="true" data-start="0" data-duration="60" viewBox="0 0 1920 610" preserveAspectRatio="none">
+      <path data-hf-id="hf-hr6b" d="M -120 610 C 650 610, 880 340, 920 0 L 980 0 C 950 340, 840 610, 820 610 Z" fill="#30353b"/>
+    </svg>
+
+    <!-- Streetlamp Glow Pools -->
+    <div data-hf-id="hf-zjff" id="lamp-glow-1" class="lamp-glow clip" data-start="0" data-duration="60" style="top: 360px; left: 880px; width: 220px; height: 160px;"></div>
+    <div data-hf-id="hf-m92v" id="lamp-glow-2" class="lamp-glow clip" data-start="0" data-duration="60" style="top: 290px; left: 630px; width: 340px; height: 240px;"></div>
+    <div data-hf-id="hf-indg" id="lamp-glow-3" class="lamp-glow clip" data-start="0" data-duration="60" style="top: 260px; left: 440px; width: 380px; height: 260px;"></div>
+
+    <!-- Trees & Streetlamps Layer (SVG) -->
+    <svg data-hf-id="hf-hpaf" id="trees-lamps-layer" class="clip" data-start="0" data-duration="60" viewBox="0 0 1920 1080" style="position: absolute; top:0; left:0; width:1920px; height:1080px; pointer-events:none; z-index:40;">
+      <!-- Tree Left 1 -->
+      <rect data-hf-id="hf-ac9f" x="300" y="240" width="36" height="340" fill="#1b1c1e"/>
+      <path data-hf-id="hf-u5m6" d="M 318 240 L 220 100 M 318 240 L 160 140 M 318 240 L 260 80 M 318 240 L 330 60 M 318 240 L 390 80 M 318 240 L 440 120" stroke="#1b1c1e" stroke-width="14" stroke-linecap="round"/>
+
+      <!-- Tree Left 2 -->
+      <rect data-hf-id="hf-q671" x="520" y="320" width="26" height="230" fill="#242629"/>
+      <path data-hf-id="hf-as70" d="M 533 320 L 460 210 M 533 320 L 510 180 M 533 320 L 560 180 M 533 320 L 610 210" stroke="#242629" stroke-width="10" stroke-linecap="round"/>
+
+      <!-- Tree Left 3 -->
+      <rect data-hf-id="hf-0m7t" x="680" y="380" width="18" height="150" fill="#2d3034"/>
+      <path data-hf-id="hf-ils1" d="M 689 380 L 640 300 M 689 380 L 689 270 M 689 380 L 730 300" stroke="#2d3034" stroke-width="6" stroke-linecap="round"/>
+
+      <!-- Tree Right 1 -->
+      <rect data-hf-id="hf-evwq" x="1550" y="250" width="38" height="360" fill="#1b1c1e"/>
+      <path data-hf-id="hf-g0yl" d="M 1569 250 L 1450 110 M 1569 250 L 1520 80 M 1569 250 L 1600 70 M 1569 250 L 1680 120 M 1569 250 L 1720 150" stroke="#1b1c1e" stroke-width="14" stroke-linecap="round"/>
+
+      <!-- Tree Right 2 -->
+      <rect data-hf-id="hf-kjar" x="1300" y="300" width="28" height="260" fill="#242629"/>
+      <path data-hf-id="hf-u2bs" d="M 1314 300 L 1230 190 M 1314 300 L 1290 160 M 1314 300 L 1350 160 M 1314 300 L 1400 200" stroke="#242629" stroke-width="10" stroke-linecap="round"/>
+
+      <!-- Streetlamps -->
+      <line data-hf-id="hf-a9fj" x1="690" y1="320" x2="690" y2="490" stroke="#0a0c10" stroke-width="6"/>
+      <polygon data-hf-id="hf-1ld8" points="682,320 698,320 702,285 678,285" fill="#fef08a"/>
+      <circle data-hf-id="hf-irys" cx="690" cy="280" r="10" fill="#fffbeb"/>
+
+      <line data-hf-id="hf-ke2b" x1="790" y1="380" x2="790" y2="470" stroke="#0a0c10" stroke-width="4"/>
+      <polygon data-hf-id="hf-ipc1" points="785,380 795,380 798,360 782,360" fill="#fef08a"/>
+    </svg>
+
+    <!-- Cast Shadow -->
+    <div data-hf-id="hf-foi6" id="walker-shadow" class="walker-shadow clip" data-start="0" data-duration="60"></div>
+
+    <!-- Protagonist Walker Rig (SVG) -->
+    <svg data-hf-id="hf-9b5l" id="walker" class="walker-rig clip" data-start="0" data-duration="60" viewBox="0 0 160 320">
+      <rect data-hf-id="hf-bf72" x="45" y="90" width="70" height="110" rx="28" fill="#090c12" stroke="rgba(255, 240, 200, 0.45)" stroke-width="3"/>
+      <circle data-hf-id="hf-1ykg" cx="80" cy="50" r="38" fill="#090c12" stroke="rgba(255, 240, 200, 0.45)" stroke-width="3"/>
+      <ellipse data-hf-id="hf-h0ph" cx="70" cy="50" rx="5" ry="7" fill="#ffffff"/>
+      <ellipse data-hf-id="hf-5yz3" cx="90" cy="50" rx="5" ry="7" fill="#ffffff"/>
+
+      <g data-hf-id="hf-nm49" id="leg-left">
+        <rect data-hf-id="hf-2ozx" x="52" y="195" width="20" height="90" rx="10" fill="#090c12"/>
+        <path data-hf-id="hf-irvo" d="M 40 280 L 74 280 L 72 292 L 36 292 Z" fill="#38bdf8"/>
+      </g>
+
+      <g data-hf-id="hf-2p44" id="leg-right">
+        <rect data-hf-id="hf-v8kc" x="88" y="195" width="20" height="90" rx="10" fill="#090c12"/>
+        <path data-hf-id="hf-s9nq" d="M 80 280 L 114 280 L 112 292 L 76 292 Z" fill="#38bdf8"/>
+      </g>
+
+      <path data-hf-id="hf-tt9f" id="arm-left" d="M 48 100 L 32 170" stroke="#090c12" stroke-width="18" stroke-linecap="round"/>
+      <g data-hf-id="hf-z94u" id="arm-right">
+        <path data-hf-id="hf-jz1r" d="M 112 100 L 128 170" stroke="#090c12" stroke-width="18" stroke-linecap="round"/>
+        <rect data-hf-id="hf-lo3s" x="120" y="145" width="16" height="16" rx="4" fill="#06b6d4" filter="drop-shadow(0 0 8px #06b6d4)"/>
+      </g>
+    </svg>
+
+    <!-- Floating Timer Pill HUD -->
+    <div data-hf-id="hf-alj4" id="timer-hud-s4" class="timer-pill clip" data-start="0" data-duration="60">
+      <div data-hf-id="hf-lu65" class="dot"></div>
+      <div data-hf-id="hf-53qn" id="hud-timer" class="time-digits">01:14</div>
+      <div data-hf-id="hf-l691" class="goal-text">Goal: 05:00</div>
+    </div>
+
+    <!-- Dialogue Thought -->
+    <div data-hf-id="hf-na4k" id="thought-s4" class="story-dialogue thought-scene4 clip" data-start="0" data-duration="60">
+      Just one minute at a time.
+    </div>
+
+    <!-- Subtitle -->
+    <div data-hf-id="hf-qdz3" id="subtitle-s4" class="cinematic-subtitle clip" data-start="0" data-duration="60" style="opacity: 0;">
+      "The first sixty seconds feel heavy. Your mind invents ten reasons to turn back."
+    </div>
+
+    <!-- Vignette Overlay -->
+    <div data-hf-id="hf-17e2" id="vignette-s4" class="cinematic-vignette clip" data-layout-allow-occlusion="true" data-start="0" data-duration="60"></div>
+
+    <script>
+      (function() {
+        const tl = gsap.timeline({ paused: true });
+
+        // Protagonist walk cycle: legs swinging back and forth
+        tl.to('[data-composition-id="scene4"] #leg-left', { y: -12, x: 8, rotation: 10, transformOrigin: "top center", yoyo: true, repeat: 75, duration: 0.4 }, 0);
+        tl.to('[data-composition-id="scene4"] #leg-right', { y: 12, x: -8, rotation: -10, transformOrigin: "top center", yoyo: true, repeat: 75, duration: 0.4 }, 0);
+        tl.to('[data-composition-id="scene4"] #arm-left', { rotation: -14, transformOrigin: "top center", yoyo: true, repeat: 75, duration: 0.4 }, 0);
+        tl.to('[data-composition-id="scene4"] #arm-right', { rotation: 14, transformOrigin: "top center", yoyo: true, repeat: 75, duration: 0.4 }, 0);
+
+        // Torso subtle vertical bobbing
+        tl.to('[data-composition-id="scene4"] #walker', { y: -6, yoyo: true, repeat: 150, duration: 0.2 }, 0);
+
+        // Character slowly progresses forward along the perspective path
+        tl.fromTo('[data-composition-id="scene4"] #walker', 
+          { x: -50, scale: 0.95 }, 
+          { x: 70, scale: 1.05, duration: 55, ease: "linear" }, 
+          0
+        );
+        tl.fromTo('[data-composition-id="scene4"] #walker-shadow', 
+          { x: -50, scale: 0.95 }, 
+          { x: 70, scale: 1.05, duration: 55, ease: "linear" }, 
+          0
+        );
+
+        // Timer counts up deterministically from 01:14 to 04:59
+        const timerKeyframes = [
+          { t: 0, str: "01:14" },
+          { t: 8, str: "01:58" },
+          { t: 16, str: "02:45" },
+          { t: 26, str: "03:30" },
+          { t: 38, str: "04:15" },
+          { t: 50, str: "04:59" },
+        ];
+        timerKeyframes.forEach(({ t, str }) => {
+          tl.call(() => {
+            const el = document.querySelector('[data-composition-id="scene4"] #hud-timer');
+            if (el) el.textContent = str;
+          }, null, t);
+        });
+
+        // Subtitles & Voiceover sync
+        tl.to('[data-composition-id="scene4"] #subtitle-s4', { opacity: 1, duration: 0.6 }, 2.0);
+        tl.call(() => {
+          const sub = document.querySelector('[data-composition-id="scene4"] #subtitle-s4');
+          if (sub) sub.textContent = "The first sixty seconds feel heavy. Your mind invents ten reasons to turn back.";
+        }, null, 2.0);
+
+        // Thought pops in
+        tl.fromTo('[data-composition-id="scene4"] #thought-s4', 
+          { opacity: 0, y: 15 }, 
+          { opacity: 1, y: 0, duration: 0.7, ease: "power2.out" }, 
+          4.0
+        );
+        tl.to('[data-composition-id="scene4"] #thought-s4', { opacity: 0, duration: 0.7 }, 10.0);
+
+        tl.call(() => {
+          const sub = document.querySelector('[data-composition-id="scene4"] #subtitle-s4');
+          if (sub) sub.textContent = "Yet with every stride down the quiet road, the resistance fades.";
+        }, null, 7.5);
+
+        tl.call(() => {
+          const sub = document.querySelector('[data-composition-id="scene4"] #subtitle-s4');
+          if (sub) sub.textContent = "You aren't fighting the mountain anymore. You're just taking the next step.";
+        }, null, 13.0);
+
+        // Transition out
+        tl.to('[data-composition-id="scene4"]', { opacity: 0, duration: 2.0 }, 57.0);
+
+        window.__timelines = window.__timelines || {};
+        window.__timelines["scene4"] = tl;
+      })();
+    </script>
+  </div>
+</template>

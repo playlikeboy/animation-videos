@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en" data-resolution="landscape">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <title>THE 5-MINUTE RULE | An Animated Short Film</title>
+    <link rel="stylesheet" href="assets/css/cinematic-theme.css" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html, body {
+        width: 1920px;
+        height: 1080px;
+        overflow: hidden;
+        background: #060910;
+      }
+      #root {
+        position: relative;
+        width: 1920px;
+        height: 1080px;
+      }
+      .scene-host {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 1920px;
+        height: 1080px;
+      }
+    </style>
+  </head>
+  <body>
+    <div data-hf-id="hf-gukl"
+      id="root"
+      data-composition-id="main"
+      data-start="0"
+      data-duration="300"
+      data-width="1920"
+      data-height="1080"
+    >
+      <!-- Ambient Drone Soundtrack running continuously across all 5 scenes -->
+      <audio data-hf-id="hf-66t4" id="ambient-score" src="assets/audio/music/ambient-soundtrack.mp3" data-start="0" data-duration="300" preload="auto"></audio>
+      <!-- Scene 1: The Alarm & The Inertia (0:00 - 1:00 / 0s - 60s) -->
+      <div data-hf-id="hf-t6sv"
+        id="host-scene1"
+        class="scene-host clip"
+        data-composition-id="scene1"
+        data-composition-src="compositions/scene1-the-alarm.html"
+        data-start="0"
+        data-duration="60"
+        data-track-index="0"
+      ></div>
+
+      <!-- Scene 2: The Unbearable Mountain (1:00 - 2:00 / 60s - 120s) -->
+      <div data-hf-id="hf-6vv6"
+        id="host-scene2"
+        class="scene-host clip"
+        data-composition-id="scene2"
+        data-composition-src="compositions/scene2-the-mountain.html"
+        data-start="60"
+        data-duration="60"
+        data-track-index="0"
+      ></div>
+
+      <!-- Scene 3: The Encounter (2:00 - 3:00 / 120s - 180s) -->
+      <div data-hf-id="hf-jjcy"
+        id="host-scene3"
+        class="scene-host clip"
+        data-composition-id="scene3"
+        data-composition-src="compositions/scene3-the-encounter.html"
+        data-start="120"
+        data-duration="60"
+        data-track-index="0"
+      ></div>
+
+      <!-- Scene 4: The First Stride (3:00 - 4:00 / 180s - 240s) -->
+      <div data-hf-id="hf-ezua"
+        id="host-scene4"
+        class="scene-host clip"
+        data-composition-id="scene4"
+        data-composition-src="compositions/scene4-the-first-stride.html"
+        data-start="180"
+        data-duration="60"
+        data-track-index="0"
+      ></div>
+
+      <!-- Scene 5: The Dawn of Momentum (4:00 - 5:00 / 240s - 300s) -->
+      <div data-hf-id="hf-7i1t"
+        id="host-scene5"
+        class="scene-host clip"
+        data-composition-id="scene5"
+        data-composition-src="compositions/scene5-the-horizon.html"
+        data-start="240"
+        data-duration="60"
+      ></div>
+      <script>
+        const tl = gsap.timeline({ paused: true });
+
+        // Crossfade transitions between consecutive scenes
+        tl.to("#host-scene1", { opacity: 0, duration: 1.5 }, 58.5);
+        tl.fromTo("#host-scene2", { opacity: 0 }, { opacity: 1, duration: 1.5 }, 60.0);
+
+        tl.to("#host-scene2", { opacity: 0, duration: 1.5 }, 118.5);
+        tl.fromTo("#host-scene3", { opacity: 0 }, { opacity: 1, duration: 1.5 }, 120.0);
+
+        tl.to("#host-scene3", { opacity: 0, duration: 1.5 }, 178.5);
+        tl.fromTo("#host-scene4", { opacity: 0 }, { opacity: 1, duration: 1.5 }, 180.0);
+
+        tl.to("#host-scene4", { opacity: 0, duration: 1.5 }, 238.5);
+        tl.fromTo("#host-scene5", { opacity: 0 }, { opacity: 1, duration: 1.5 }, 240.0);
+
+        window.__timelines = window.__timelines || {};
+        window.__timelines["main"] = tl;
+        tl.seek(0);
+      </script>
+    </div>
+  </body>
+</html>

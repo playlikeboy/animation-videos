@@ -1,0 +1,183 @@
+<template id="scene2-template">
+  <div
+    id="scene2-root"
+    data-composition-id="scene2"
+    data-width="1920"
+    data-height="1080"
+    data-duration="60"
+    style="position: relative; width: 1920px; height: 1080px; overflow: hidden; background: #060a14;"
+  >
+    <style>
+      [data-composition-id="scene2"] .grid-bg {
+        position: absolute;
+        inset: 0;
+        background-image: 
+          linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+          linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+        background-size: 60px 60px;
+      }
+
+      [data-composition-id="scene2"] .laser-beam {
+        position: absolute;
+        top: 0;
+        left: 960px;
+        width: 4px;
+        height: 1080px;
+        background: #ef4444;
+        box-shadow: 0 0 30px #ef4444, 0 0 60px #f87171;
+        opacity: 0;
+        z-index: 30;
+      }
+
+      [data-composition-id="scene2"] .alien-hands-container {
+        position: absolute;
+        top: 260px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 800px;
+        height: 480px;
+        z-index: 15;
+      }
+
+      [data-composition-id="scene2"] .eeg-wave {
+        stroke-dasharray: 400;
+        stroke-dashoffset: 400;
+      }
+    </style>
+
+    <div class="grid-bg"></div>
+    <div id="laser" class="laser-beam"></div>
+
+    <!-- Telemetry -->
+    <div style="position: absolute; top: 80px; left: 120px; z-index: 20;">
+      <div class="concept-tag" style="border-color: #ef4444; color: #ef4444; background: rgba(239, 68, 68, 0.12);">
+        SURGICAL CALLOSOTOMY · SEVERE INTRACTABLE EPILEPSY
+      </div>
+      <div style="font-size: 38px; font-weight: 800; color: #ffffff; margin-top: 10px;">
+        The Severed Bridge
+      </div>
+      <div style="font-size: 16px; color: #94a3b8; font-weight: 500;">
+        EPILEPTIC SEIZURE FREQUENCY: 0.00 Hz (POST-TRANSECTION)
+      </div>
+    </div>
+
+    <!-- Central Interactive Diagram (Brain splitting + Hands) -->
+    <div class="alien-hands-container">
+      <svg viewBox="0 0 800 480" width="100%" height="100%">
+        <!-- Separated Left & Right Brain blocks -->
+        <g id="split-left" transform="translate(180, 60)">
+          <rect width="180" height="180" rx="30" fill="#0d1b2a" stroke="#00f3ff" stroke-width="4" filter="drop-shadow(0 0 15px rgba(0, 243, 255, 0.4))" />
+          <text x="90" y="85" fill="#00f3ff" font-size="20" font-weight="900" text-anchor="middle">LEFT BRAIN</text>
+          <text x="90" y="115" fill="#ffffff" font-size="14" font-weight="700" text-anchor="middle">SPEAKS · REASONS</text>
+          <text x="90" y="140" fill="#94a3b8" font-size="12" text-anchor="middle">Controls Right Hand</text>
+        </g>
+
+        <g id="split-right" transform="translate(440, 60)">
+          <rect width="180" height="180" rx="30" fill="#1b120c" stroke="#f59e0b" stroke-width="4" filter="drop-shadow(0 0 15px rgba(245, 158, 11, 0.4))" />
+          <text x="90" y="85" fill="#f59e0b" font-size="20" font-weight="900" text-anchor="middle">RIGHT BRAIN</text>
+          <text x="90" y="115" fill="#ffffff" font-size="14" font-weight="700" text-anchor="middle">MUTE · PERCEIVES</text>
+          <text x="90" y="140" fill="#94a3b8" font-size="12" text-anchor="middle">Controls Left Hand</text>
+        </g>
+
+        <!-- Severed Gap Graphic -->
+        <g id="sever-cut" transform="translate(390, 80)">
+          <line x1="10" y1="0" x2="10" y2="140" stroke="#ef4444" stroke-width="4" stroke-dasharray="8 6" />
+          <text x="10" y="165" fill="#ef4444" font-size="12" font-weight="900" text-anchor="middle">SEVERED</text>
+        </g>
+
+        <!-- Torso with Shirt & Opposing Hands -->
+        <g id="hands-interaction" transform="translate(260, 280)">
+          <!-- Shirt Front -->
+          <rect x="70" y="0" width="140" height="180" rx="10" fill="#1e293b" stroke="#334155" stroke-width="2" />
+          <!-- Button row -->
+          <circle cx="140" cy="40" r="8" fill="#ffffff" />
+          <circle cx="140" cy="80" r="8" fill="#ffffff" />
+          <circle cx="140" cy="120" r="8" fill="#ffffff" />
+
+          <!-- Left Hand (Controlled by Right Brain) reaches to unbutton -->
+          <g id="hand-left" transform="translate(0, 50)">
+            <path d="M 0 50 Q 60 40 120 70 L 125 80 L 110 88 Z" fill="#090d14" stroke="#f59e0b" stroke-width="3" />
+            <text x="30" y="25" fill="#f59e0b" font-size="12" font-weight="800">LEFT HAND: UNBUTTONS</text>
+          </g>
+
+          <!-- Right Hand (Controlled by Left Brain) reaches to button -->
+          <g id="hand-right" transform="translate(160, 50)">
+            <path d="M 120 50 Q 60 40 5 75 L 10 88 L 25 80 Z" fill="#090d14" stroke="#00f3ff" stroke-width="3" />
+            <text x="35" y="25" fill="#00f3ff" font-size="12" font-weight="800">RIGHT HAND: BUTTONS</text>
+          </g>
+        </g>
+      </svg>
+    </div>
+
+    <!-- Thought Card -->
+    <div id="thought-s2" class="thought-card" style="bottom: 220px; left: 160px; opacity: 0;">
+      "Two distinct wills living inside the same body."
+    </div>
+
+    <!-- Subtitles -->
+    <div id="sub-s2" class="cinematic-subtitle" style="opacity: 0;">
+      "In the mid-twentieth century, neurosurgeons faced patients with violent, uncontrollable seizures."
+    </div>
+
+    <script>
+      (function() {
+        const tl = gsap.timeline({ paused: true });
+
+        // Laser cut pulse at 14s (representing callosotomy)
+        tl.to('[data-composition-id="scene2"] #laser', { opacity: 1, duration: 0.1 }, 14.0);
+        tl.to('[data-composition-id="scene2"] #laser', { opacity: 0, duration: 0.8 }, 14.2);
+
+        // Hemispheres push apart
+        tl.fromTo('[data-composition-id="scene2"] #split-left', 
+          { x: 300 }, 
+          { x: 180, duration: 2.0, ease: "power3.out" }, 
+          14.2
+        );
+        tl.fromTo('[data-composition-id="scene2"] #split-right', 
+          { x: 320 }, 
+          { x: 440, duration: 2.0, ease: "power3.out" }, 
+          14.2
+        );
+
+        // Alien Hand conflict movement
+        tl.to('[data-composition-id="scene2"] #hand-right', { x: "+=15", duration: 0.8, yoyo: true, repeat: 12, ease: "sine.inOut" }, 22.0);
+        tl.to('[data-composition-id="scene2"] #hand-left', { x: "-=15", duration: 0.8, yoyo: true, repeat: 12, ease: "sine.inOut" }, 22.4);
+
+        // Subtitle Sync
+        tl.to('[data-composition-id="scene2"] #sub-s2', { opacity: 1, duration: 0.6 }, 4.0);
+
+        tl.call(() => {
+          const el = document.querySelector('[data-composition-id="scene2"] #sub-s2');
+          if (el) el.textContent = "In the mid-twentieth century, neurosurgeons faced patients with violent seizures.";
+        }, null, 4.0);
+
+        tl.call(() => {
+          const el = document.querySelector('[data-composition-id="scene2"] #sub-s2');
+          if (el) el.textContent = "To save them, surgeons did the unthinkable: they cut the bridge.";
+        }, null, 11.0);
+
+        tl.call(() => {
+          const el = document.querySelector('[data-composition-id="scene2"] #sub-s2');
+          if (el) el.textContent = "The corpus callosum was severed. When they woke up, they seemed normal.";
+        }, null, 17.0);
+
+        tl.to('[data-composition-id="scene2"] #thought-s2', { opacity: 1, y: -10, duration: 0.8 }, 24.0);
+
+        tl.call(() => {
+          const el = document.querySelector('[data-composition-id="scene2"] #sub-s2');
+          if (el) el.textContent = "A patient would reach to button their shirt with one hand, while the other hand unbuttoned it.";
+        }, null, 24.0);
+
+        tl.call(() => {
+          const el = document.querySelector('[data-composition-id="scene2"] #sub-s2');
+          if (el) el.textContent = "Two distinct wills were living in the exact same body.";
+        }, null, 30.0);
+
+        tl.to('[data-composition-id="scene2"] #scene2-root', { opacity: 0, duration: 2.5 }, 57.5);
+
+        window.__timelines = window.__timelines || {};
+        window.__timelines["scene2"] = tl;
+      })();
+    </script>
+  </div>
+</template>

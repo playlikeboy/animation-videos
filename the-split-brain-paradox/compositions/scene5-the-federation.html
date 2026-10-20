@@ -1,0 +1,151 @@
+<template id="scene5-template">
+  <div
+    id="scene5-root"
+    data-composition-id="scene5"
+    data-width="1920"
+    data-height="1080"
+    data-duration="60"
+    style="position: relative; width: 1920px; height: 1080px; overflow: hidden; background: #050711;"
+  >
+    <style>
+      [data-composition-id="scene5"] .dawn-glow {
+        position: absolute;
+        bottom: -200px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 1400px;
+        height: 600px;
+        border-radius: 50%;
+        background: radial-gradient(ellipse at center, rgba(245, 158, 11, 0.35) 0%, rgba(236, 72, 153, 0.15) 45%, transparent 75%);
+        filter: blur(60px);
+      }
+
+      [data-composition-id="scene5"] .constellation-node {
+        position: absolute;
+        padding: 12px 24px;
+        border-radius: 9999px;
+        background: rgba(15, 23, 42, 0.8);
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        color: #ffffff;
+        font-size: 18px;
+        font-weight: 700;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+      }
+
+      [data-composition-id="scene5"] .interpreter-node {
+        border-color: #00f3ff;
+        color: #00f3ff;
+        box-shadow: 0 0 30px rgba(0, 243, 255, 0.4);
+      }
+
+      [data-composition-id="scene5"] .title-hero {
+        position: absolute;
+        top: 360px;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        z-index: 50;
+      }
+
+      [data-composition-id="scene5"] .main-title {
+        font-size: 72px;
+        font-weight: 900;
+        letter-spacing: -2px;
+        line-height: 1.1;
+        background: linear-gradient(135deg, #ffffff 40%, #00f3ff 70%, #f59e0b 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    </style>
+
+    <div class="dawn-glow"></div>
+
+    <!-- Modular Parliament Nodes -->
+    <div id="nodes-container" style="position: absolute; inset: 0; z-index: 20;">
+      <div class="constellation-node" style="top: 180px; left: 340px;">🗣️ Language Network</div>
+      <div class="constellation-node" style="top: 240px; right: 380px;">👁️ Spatial Perception</div>
+      <div class="constellation-node" style="top: 480px; left: 260px;">❤️ Emotional Valence</div>
+      <div class="constellation-node" style="top: 500px; right: 300px;">🏃 Motor Coordination</div>
+      <div class="constellation-node" style="top: 140px; left: 880px;">⏳ Episodic Memory</div>
+      <div class="constellation-node interpreter-node" style="top: 260px; left: 820px;">
+        ✨ THE INTERPRETER (STORYTELLER)
+      </div>
+    </div>
+
+    <!-- Final Cinematic Title Badge -->
+    <div id="title-badge" class="title-hero" style="opacity: 0;">
+      <div class="concept-tag" style="margin-bottom: 20px;">COGNITIVE NEUROSCIENCE · FINALE</div>
+      <div class="main-title">THE SPLIT-BRAIN PARADOX</div>
+      <div style="font-size: 26px; font-weight: 600; color: #94a3b8; letter-spacing: 4px; margin-top: 16px;">
+        WHO IS TELLING YOUR STORY?
+      </div>
+    </div>
+
+    <!-- Subtitles -->
+    <div id="sub-s5" class="cinematic-subtitle" style="opacity: 0;">
+      "Gazzaniga called this system 'The Interpreter.' Its job is to weave chaos into a story called 'Me.'"
+    </div>
+
+    <script>
+      (function() {
+        const tl = gsap.timeline({ paused: true });
+
+        // Nodes float gently
+        tl.from('[data-composition-id="scene5"] .constellation-node', {
+          scale: 0.6,
+          opacity: 0,
+          stagger: 0.2,
+          duration: 1.5,
+          ease: "back.out(1.5)"
+        }, 1.0);
+
+        // Nodes diverge outwards
+        tl.to('[data-composition-id="scene5"] .constellation-node', {
+          y: "-=40",
+          opacity: 0.4,
+          duration: 6,
+          ease: "power2.inOut"
+        }, 15.0);
+
+        // Grand Title Reveal at 28s
+        tl.to('[data-composition-id="scene5"] #title-badge', {
+          opacity: 1,
+          scale: 1.05,
+          duration: 2.0,
+          ease: "power3.out"
+        }, 28.0);
+
+        // Subtitles Sync
+        tl.to('[data-composition-id="scene5"] #sub-s5', { opacity: 1, duration: 0.6 }, 4.0);
+
+        tl.call(() => {
+          const el = document.querySelector('[data-composition-id="scene5"] #sub-s5');
+          if (el) el.textContent = "Gazzaniga called this system 'The Interpreter.' Its job is to weave chaos into a story called 'Me.'";
+        }, null, 4.0);
+
+        tl.call(() => {
+          const el = document.querySelector('[data-composition-id="scene5"] #sub-s5');
+          if (el) el.textContent = "You are not a solitary captain; you are a bustling parliament of modular networks.";
+        }, null, 11.0);
+
+        tl.call(() => {
+          const el = document.querySelector('[data-composition-id="scene5"] #sub-s5');
+          if (el) el.textContent = "United by a brilliant, relentless storyteller.";
+        }, null, 18.0);
+
+        tl.call(() => {
+          const el = document.querySelector('[data-composition-id="scene5"] #sub-s5');
+          if (el) el.textContent = "Ask yourself: is your explanation the truth... or is it just your Interpreter telling you a story?";
+        }, null, 24.0);
+
+        tl.call(() => {
+          const el = document.querySelector('[data-composition-id="scene5"] #sub-s5');
+          if (el) el.textContent = "Tomorrow is waiting.";
+        }, null, 30.0);
+
+        window.__timelines = window.__timelines || {};
+        window.__timelines["scene5"] = tl;
+      })();
+    </script>
+  </div>
+</template>

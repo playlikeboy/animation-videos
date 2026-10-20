@@ -31,6 +31,8 @@ export async function renderHtmlComposition({
       '--disable-setuid-sandbox',
       '--disable-dev-shm-usage',
       '--disable-gpu',
+      '--allow-file-access-from-files',
+      '--allow-file-access',
       '--hide-scrollbars',
       `--window-size=${width},${height}`
     ]

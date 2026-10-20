@@ -1,0 +1,172 @@
+<template id="scene3-template">
+  <div
+    id="scene3-root"
+    data-composition-id="scene3"
+    data-width="1920"
+    data-height="1080"
+    data-duration="60"
+    style="position: relative; width: 1920px; height: 1080px; overflow: hidden; background: #070c18;"
+  >
+    <style>
+      [data-composition-id="scene3"] .lab-screen {
+        position: absolute;
+        top: 220px;
+        width: 480px;
+        height: 320px;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.7);
+        border: 2px solid rgba(255, 255, 255, 0.1);
+      }
+
+      [data-composition-id="scene3"] .left-screen {
+        left: 280px;
+        background: radial-gradient(circle at center, #1e1b4b 0%, #0c0a24 100%);
+        border-color: #f59e0b;
+      }
+
+      [data-composition-id="scene3"] .right-screen {
+        right: 280px;
+        background: radial-gradient(circle at center, #083344 0%, #021720 100%);
+        border-color: #00f3ff;
+      }
+
+      [data-composition-id="scene3"] .partition-divider {
+        position: absolute;
+        top: 180px;
+        left: 955px;
+        width: 10px;
+        height: 400px;
+        background: #334155;
+        border-radius: 5px;
+      }
+
+      [data-composition-id="scene3"] .fixation-cross {
+        position: absolute;
+        top: 360px;
+        left: 960px;
+        transform: translate(-50%, -50%);
+        font-size: 36px;
+        color: #ef4444;
+        font-weight: 900;
+        z-index: 40;
+      }
+
+      [data-composition-id="scene3"] .choice-card {
+        padding: 16px 28px;
+        border-radius: 12px;
+        background: #1e293b;
+        border: 2px solid #475569;
+        font-size: 22px;
+        font-weight: 700;
+        color: #ffffff;
+      }
+
+      [data-composition-id="scene3"] .picked-shovel {
+        border-color: #f59e0b;
+        background: rgba(245, 158, 11, 0.2);
+        box-shadow: 0 0 30px rgba(245, 158, 11, 0.5);
+      }
+    </style>
+
+    <!-- Lab Telemetry -->
+    <div style="position: absolute; top: 80px; left: 120px; z-index: 20;">
+      <div class="concept-tag" style="border-color: #38bdf8; color: #38bdf8; background: rgba(56, 189, 248, 0.12);">
+        CALTECH LAB · SPERRY & GAZZANIGA EXPERIMENTAL CHAMBER
+      </div>
+      <div style="font-size: 38px; font-weight: 800; color: #ffffff; margin-top: 10px;">
+        The Experiment of Two Worlds
+      </div>
+      <div style="font-size: 16px; color: #94a3b8; font-weight: 500;">
+        TACHISTOSCOPIC PRESENTATION: 100 MILLISECONDS DURATION
+      </div>
+    </div>
+
+    <div class="partition-divider"></div>
+    <div class="fixation-cross">+</div>
+
+    <!-- Left Screen (Projects to Right Hemisphere) -->
+    <div id="screen-left" class="lab-screen left-screen">
+      <div style="font-size: 14px; color: #f59e0b; font-weight: 800; letter-spacing: 2px; margin-bottom: 12px;">
+        LEFT VISUAL FIELD → RIGHT BRAIN
+      </div>
+      <div style="font-size: 64px;">❄️ 🌨️</div>
+      <div style="font-size: 40px; font-weight: 900; color: #ffffff; letter-spacing: 4px; margin-top: 12px;">
+        SNOW
+      </div>
+    </div>
+
+    <!-- Right Screen (Projects to Left Hemisphere) -->
+    <div id="screen-right" class="lab-screen right-screen">
+      <div style="font-size: 14px; color: #00f3ff; font-weight: 800; letter-spacing: 2px; margin-bottom: 12px;">
+        RIGHT VISUAL FIELD → LEFT BRAIN
+      </div>
+      <div style="font-size: 64px;">🐔 🐾</div>
+      <div style="font-size: 40px; font-weight: 900; color: #ffffff; letter-spacing: 4px; margin-top: 12px;">
+        CHICKEN CLAW
+      </div>
+    </div>
+
+    <!-- Choice Array (Bottom Table) -->
+    <div id="choices" style="position: absolute; bottom: 200px; left: 50%; transform: translateX(-50%); display: flex; gap: 30px; z-index: 25;">
+      <div class="choice-card">🌾 Chicken Feed</div>
+      <div id="card-shovel" class="choice-card">❄️ Snow Shovel</div>
+      <div class="choice-card">🍎 Red Apple</div>
+      <div class="choice-card">🔨 Iron Hammer</div>
+    </div>
+
+    <!-- Subtitles -->
+    <div id="sub-s3" class="cinematic-subtitle" style="opacity: 0;">
+      "In the 1960s, Roger Sperry and Michael Gazzaniga devised an experiment that shattered our concept of self."
+    </div>
+
+    <script>
+      (function() {
+        const tl = gsap.timeline({ paused: true });
+
+        // Rapid Flash at 12s (Tachistoscope pulse)
+        tl.fromTo('[data-composition-id="scene3"] #screen-left', { opacity: 0.2 }, { opacity: 1, duration: 0.15, yoyo: true, repeat: 1 }, 12.0);
+        tl.fromTo('[data-composition-id="scene3"] #screen-right', { opacity: 0.2 }, { opacity: 1, duration: 0.15, yoyo: true, repeat: 1 }, 12.0);
+
+        // Left Hand points to Snow Shovel at 24s
+        tl.to('[data-composition-id="scene3"] #card-shovel', {
+          scale: 1.15,
+          className: "+=picked-shovel",
+          duration: 0.6,
+          ease: "back.out(2)"
+        }, 24.0);
+
+        // Subtitles Sync
+        tl.to('[data-composition-id="scene3"] #sub-s3', { opacity: 1, duration: 0.6 }, 4.0);
+
+        tl.call(() => {
+          const el = document.querySelector('[data-composition-id="scene3"] #sub-s3');
+          if (el) el.textContent = "In the 1960s, Roger Sperry and Michael Gazzaniga devised an experiment that shattered our concept of self.";
+        }, null, 4.0);
+
+        tl.call(() => {
+          const el = document.querySelector('[data-composition-id="scene3"] #sub-s3');
+          if (el) el.textContent = "They flashed two different images at the same time: a chicken claw to the right, and snow to the left.";
+        }, null, 11.0);
+
+        tl.call(() => {
+          const el = document.querySelector('[data-composition-id="scene3"] #sub-s3');
+          if (el) el.textContent = "The speaking left hemisphere saw only the chicken claw. The silent right hemisphere saw the snow.";
+        }, null, 18.0);
+
+        tl.call(() => {
+          const el = document.querySelector('[data-composition-id="scene3"] #sub-s3');
+          if (el) el.textContent = "When asked to point with their left hand, the patient immediately pointed to a snow shovel.";
+        }, null, 25.0);
+
+        tl.to('[data-composition-id="scene3"] #scene3-root', { opacity: 0, duration: 2.5 }, 57.5);
+
+        window.__timelines = window.__timelines || {};
+        window.__timelines["scene3"] = tl;
+      })();
+    </script>
+  </div>
+</template>

@@ -1,0 +1,206 @@
+<template id="scene1-template">
+  <div
+    id="scene1-root"
+    data-composition-id="scene1"
+    data-width="1920"
+    data-height="1080"
+    data-duration="60"
+    style="position: relative; width: 1920px; height: 1080px; overflow: hidden; background: #050811;"
+  >
+    <style>
+      [data-composition-id="scene1"] .deep-glow {
+        position: absolute;
+        width: 1000px;
+        height: 1000px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        background: radial-gradient(circle, rgba(0, 243, 255, 0.08) 0%, rgba(245, 158, 11, 0.06) 45%, transparent 70%);
+        filter: blur(80px);
+        pointer-events: none;
+      }
+
+      [data-composition-id="scene1"] .head-silhouette {
+        position: absolute;
+        top: 140px;
+        left: 680px;
+        width: 560px;
+        height: 720px;
+        z-index: 10;
+      }
+
+      [data-composition-id="scene1"] .hemisphere-left {
+        filter: drop-shadow(0 0 25px rgba(0, 243, 255, 0.65));
+      }
+
+      [data-composition-id="scene1"] .hemisphere-right {
+        filter: drop-shadow(0 0 25px rgba(245, 158, 11, 0.65));
+      }
+
+      [data-composition-id="scene1"] .corpus-bridge {
+        stroke-dasharray: 8 6;
+        animation: pulseFlow 2s linear infinite;
+      }
+
+      [data-composition-id="scene1"] .metric-badge {
+        position: absolute;
+        top: 100px;
+        left: 140px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        z-index: 20;
+      }
+
+      [data-composition-id="scene1"] .metric-number {
+        font-size: 56px;
+        font-weight: 900;
+        letter-spacing: -2px;
+        background: linear-gradient(135deg, #ffffff 40%, #00f3ff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    </style>
+
+    <div class="deep-glow"></div>
+
+    <!-- Telemetry Badges -->
+    <div class="metric-badge">
+      <div class="concept-tag">NEUROSCIENCE · HEMISPHERIC ARCHITECTURE</div>
+      <div class="metric-number">200,000,000</div>
+      <div style="font-size: 16px; color: #94a3b8; font-weight: 600; letter-spacing: 0.05em;">
+        AXONAL FIBERS CONNECTING TWO WORLDS
+      </div>
+    </div>
+
+    <!-- Central Brain & Silhouette Graphic (SVG) -->
+    <div class="head-silhouette">
+      <svg viewBox="0 0 600 700" width="100%" height="100%">
+        <!-- Head Profile Outline -->
+        <path
+          d="M 180 680 C 180 580, 210 520, 230 480 C 150 440, 100 350, 110 240 C 120 120, 220 50, 350 50 C 470 50, 530 140, 540 230 C 550 310, 520 370, 470 410 C 460 450, 470 520, 520 680 Z"
+          fill="#0a0f1d"
+          stroke="#1e293b"
+          stroke-width="3"
+        />
+
+        <!-- Left Hemisphere (Logic/Speech - Cyan) -->
+        <g id="left-hemi" class="hemisphere-left">
+          <path
+            d="M 230 220 C 220 170, 260 110, 320 100 C 350 140, 340 220, 310 260 C 280 270, 240 260, 230 220 Z"
+            fill="rgba(0, 243, 255, 0.18)"
+            stroke="#00f3ff"
+            stroke-width="4"
+          />
+          <text x="245" y="190" fill="#00f3ff" font-size="14" font-weight="800" letter-spacing="2">LEFT BRAIN</text>
+          <text x="245" y="212" fill="#94a3b8" font-size="11" font-weight="700">LANGUAGE & LOGIC</text>
+        </g>
+
+        <!-- Right Hemisphere (Spatial/Intuition - Amber) -->
+        <g id="right-hemi" class="hemisphere-right">
+          <path
+            d="M 360 100 C 420 110, 460 170, 450 220 C 440 260, 400 270, 370 260 C 340 220, 330 140, 360 100 Z"
+            fill="rgba(245, 158, 11, 0.18)"
+            stroke="#f59e0b"
+            stroke-width="4"
+          />
+          <text x="370" y="190" fill="#f59e0b" font-size="14" font-weight="800" letter-spacing="2">RIGHT BRAIN</text>
+          <text x="370" y="212" fill="#94a3b8" font-size="11" font-weight="700">SPATIAL & HOLISTIC</text>
+        </g>
+
+        <!-- The Corpus Callosum Bridge (Filaments) -->
+        <g id="corpus-bridge">
+          <line x1="315" y1="160" x2="365" y2="160" stroke="#ffffff" stroke-width="5" class="corpus-bridge" />
+          <line x1="310" y1="180" x2="370" y2="180" stroke="#38bdf8" stroke-width="5" class="corpus-bridge" />
+          <line x1="315" y1="200" x2="365" y2="200" stroke="#fcd34d" stroke-width="5" class="corpus-bridge" />
+          <circle cx="340" cy="180" r="14" fill="#ffffff" filter="drop-shadow(0 0 10px #00f3ff)" />
+        </g>
+      </svg>
+    </div>
+
+    <!-- Floating Dialogue Thought -->
+    <div id="thought-s1" class="thought-card" style="top: 360px; right: 180px; opacity: 0;">
+      "You believe you are a single mind. But that is an illusion."
+    </div>
+
+    <!-- Cinematic Subtitles -->
+    <div id="sub-s1" class="cinematic-subtitle" style="opacity: 0;">
+      "Every moment of your waking life feels unbroken. You think in a single voice."
+    </div>
+
+    <script>
+      (function() {
+        const tl = gsap.timeline({ paused: true });
+
+        // Scene Entrance
+        tl.fromTo('[data-composition-id="scene1"] .head-silhouette',
+          { scale: 0.85, opacity: 0, y: 40 },
+          { scale: 1.0, opacity: 1, y: 0, duration: 2.2, ease: "cubic-bezier(0.16, 1, 0.3, 1)" },
+          0.5
+        );
+
+        // Hemispheres illuminate
+        tl.fromTo('[data-composition-id="scene1"] #left-hemi',
+          { opacity: 0, x: -30 },
+          { opacity: 1, x: 0, duration: 1.8, ease: "power2.out" },
+          1.5
+        );
+
+        tl.fromTo('[data-composition-id="scene1"] #right-hemi',
+          { opacity: 0, x: 30 },
+          { opacity: 1, x: 0, duration: 1.8, ease: "power2.out" },
+          2.0
+        );
+
+        // Bridge fires with bright white energy
+        tl.fromTo('[data-composition-id="scene1"] #corpus-bridge',
+          { scale: 0, opacity: 0, transformOrigin: "center" },
+          { scale: 1, opacity: 1, duration: 1.2, ease: "back.out(2)" },
+          2.8
+        );
+
+        // Voiceover Subtitles synced
+        tl.to('[data-composition-id="scene1"] #sub-s1', { opacity: 1, duration: 0.6 }, 4.0);
+
+        tl.call(() => {
+          const el = document.querySelector('[data-composition-id="scene1"] #sub-s1');
+          if (el) el.textContent = "Every moment of your waking life feels unbroken. You think in a single voice.";
+        }, null, 4.0);
+
+        tl.call(() => {
+          const el = document.querySelector('[data-composition-id="scene1"] #sub-s1');
+          if (el) el.textContent = "You make decisions with a single will. You believe you are one person.";
+        }, null, 10.0);
+
+        // Thought card appears
+        tl.to('[data-composition-id="scene1"] #thought-s1', { opacity: 1, y: -10, duration: 1.0, ease: "power2.out" }, 12.0);
+
+        tl.call(() => {
+          const el = document.querySelector('[data-composition-id="scene1"] #sub-s1');
+          if (el) el.textContent = "But beneath your skull sits not one mind, but two. Two separate hemispheres.";
+        }, null, 16.0);
+
+        tl.call(() => {
+          const el = document.querySelector('[data-composition-id="scene1"] #sub-s1');
+          if (el) el.textContent = "Bound together by a fragile bridge of two hundred million nerve fibers: the corpus callosum.";
+        }, null, 21.0);
+
+        // Pulsing breathing motion
+        tl.to('[data-composition-id="scene1"] #corpus-bridge circle', {
+          scale: 1.4,
+          duration: 1.2,
+          repeat: 18,
+          yoyo: true,
+          ease: "sine.inOut"
+        }, 3.5);
+
+        // Fade out transition at 57s
+        tl.to('[data-composition-id="scene1"] #scene1-root', { opacity: 0, duration: 2.5 }, 57.5);
+
+        window.__timelines = window.__timelines || {};
+        window.__timelines["scene1"] = tl;
+      })();
+    </script>
+  </div>
+</template>

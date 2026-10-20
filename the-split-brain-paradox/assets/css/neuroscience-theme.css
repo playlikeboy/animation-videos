@@ -1,0 +1,100 @@
+/* Neuroscience Cinematic Theme */
+:root {
+  --bg-primary: #050811;
+  --bg-secondary: #0a1122;
+  --color-left-hemisphere: #00f3ff;
+  --color-right-hemisphere: #f59e0b;
+  --color-corpus: #ffffff;
+  --color-accent-magenta: #ec4899;
+  --text-primary: #ffffff;
+  --text-muted: #94a3b8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 1920px;
+  height: 1080px;
+  overflow: hidden;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, sans-serif;
+  user-select: none;
+}
+
+/* Vignette overlay */
+.cinematic-vignette {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(circle at 50% 50%, transparent 45%, rgba(2, 4, 10, 0.85) 100%);
+  z-index: 90;
+}
+
+/* Subtle Film Grain */
+.film-grain {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.04;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  z-index: 91;
+}
+
+/* Introspective Floating Dialogue Card */
+.thought-card {
+  position: absolute;
+  padding: 18px 36px;
+  background: rgba(10, 17, 34, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 9999px;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.6), 0 0 30px rgba(0, 243, 255, 0.15);
+  backdrop-filter: blur(16px);
+  color: #ffffff;
+  font-size: 26px;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  z-index: 40;
+}
+
+/* Cinematic Subtitle Box at Bottom */
+.cinematic-subtitle {
+  position: absolute;
+  bottom: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 1400px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: #f1f5f9;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.9);
+  padding: 16px 40px;
+  background: rgba(5, 8, 17, 0.8);
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  z-index: 80;
+  transition: opacity 0.4s ease;
+}
+
+/* Badge Headers */
+.concept-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 16px;
+  border-radius: 9999px;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  background: rgba(0, 243, 255, 0.12);
+  border: 1px solid rgba(0, 243, 255, 0.35);
+  color: #00f3ff;
+}

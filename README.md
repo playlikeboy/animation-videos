@@ -22,6 +22,12 @@ animation-videos/
 │   └── generate_all_audio.py      # Batch CLI audio orchestrator
 │
 ├── the-five-minute-rule/          # Full 5-minute animated short film (Silhouette Vector)
+├── the-split-brain-paradox/       # 🧠 Full 5-minute animated neuroscience film (Two Minds in One Skull)
+│   ├── SCRIPT_AND_STORYBOARD.md   # Complete 5-scene clinical script & visual beats
+│   ├── index.html                 # 300s master seekable HTML5/SVG/GSAP composition
+│   ├── compositions/              # Modular 60s standalone scene compositions (Scenes 1–5)
+│   ├── assets/                    # Neural Edge-TTS voiceovers, ambient drone score, SFX
+│   └── snapshots/                 # High-resolution 1080p frame captures & contact sheet
 ├── templates/                     # 🎥 Reusable starter compositions for the 5 visual worlds:
 │   ├── template-hyperframes-saas/     # SaaS dashboard telemetry & window motion
 │   ├── template-onetake-kinetic/      # Unbroken camera flight & kinetic typography
@@ -66,7 +72,8 @@ animation-videos/
 │   ├── 03-collage-broll-demo.mp4
 │   ├── 04-claude-canvas2d-demo.mp4
 │   ├── 05-lemo-opuscar-demo.mp4
-│   └── the-five-minute-rule-scene1-showcase.mp4
+│   ├── the-five-minute-rule-scene1-showcase.mp4
+│   └── the-split-brain-paradox-showcase.mp4
 │
 └── tools/                         # 🛠️ MCP Servers & Integration Tools
     └── imgbb-mcp/                 # Model Context Protocol server for image hosting
@@ -151,6 +158,23 @@ Custom skills are equipped in `skills/` and registered globally in `~/.gemini/co
 - `/collage-broll`
 - `/claude-animation-2d`
 - `/lemo-opuscar-cinematic`
+
+---
+
+## 🧠 Featured Production: *The Split-Brain Paradox* (5-Minute Film)
+
+A complete 5-minute (300.0s / 9,000 frames @ 30 FPS) animated neuroscience documentary investigating Roger Sperry & Michael Gazzaniga's Caltech split-brain research, surgical callosotomy, Alien Hand syndrome, the Left-Brain Interpreter module, and the modular nature of consciousness.
+
+- **Directory**: [`the-split-brain-paradox/`](the-split-brain-paradox/)
+- **Script & Storyboard**: [`the-split-brain-paradox/SCRIPT_AND_STORYBOARD.md`](the-split-brain-paradox/SCRIPT_AND_STORYBOARD.md)
+- **Master Composition**: [`the-split-brain-paradox/index.html`](the-split-brain-paradox/index.html) (HTML5, SVG, GSAP timelines, seekable frame architecture)
+- **Audio Architecture**:
+  - Neural Voiceover: Microsoft Edge Neural TTS (`en-US-ChristopherNeural`, 5 scenes)
+  - Atmospheric Score: 300s procedural cinematic D-minor ambient drone (`assets/audio/music/ambient-soundtrack.mp3`)
+  - Sound Design: Custom SFX (synaptic pulses, surgical sever impacts, epiphany chimes, clockwork ratchets, tactile switches)
+  - Master Mix: Exactly 300.00 seconds with intelligent ducking and balance (`assets/audio/master-soundtrack.mp3`)
+- **Visual Snapshots & Contact Sheet**: [`the-split-brain-paradox/snapshots/`](the-split-brain-paradox/snapshots/)
+- **Rendered Showcase**: [`rendered-videos/the-split-brain-paradox-showcase.mp4`](rendered-videos/the-split-brain-paradox-showcase.mp4)
 
 ---
 
